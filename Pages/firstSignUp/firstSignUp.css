@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fdfdfd;
+  --yellow: #dda704;
+  --black: #0c0c0c;
+  --border: #e0e0e0;
+  --placeHolder: #676767;
+}
+
+/* .open-sans-<uniquifier> {
+
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(./font/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+body {
+  background-color: var(--black);
+  font-size: 62.5%;
+  font-family: "Open Sans";
+}
+
+a {
+  color: #dda704;
+  text-decoration: none;
+  font-size: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--white);
+}
+.writeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* filter: blur(10px); */
+  backdrop-filter: blur(5px);
+}
+b {
+  color: var(--yellow);
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  text-wrap: wrap;
+  padding: 1rem 0;
+  text-align: center;
+}
+.signUpText {
+  padding: 1rem 0;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.topForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  margin: 1rem 0;
+  gap: 0.1rem;
+}
+.label1,
+.label2,
+.label3 {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+
+.email > input,
+.password > input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--black);
+  border: 1px solid var(--border);
+  width: 100%;
+  color: var(--white);
+}
+input::placeholder {
+  color: var(--placeHolder);
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  color: #fdfdfd;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.or {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.or span {
+  border: 1px solid var(--white);
+  width: 40%;
+  height: 0rem;
+}
+section {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.icons span i {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    /* background-color: red; */
+    background-image: url(./img/Desktop\ background\ image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100vh;
+    padding: 6rem;
+  }
+  form {
+    gap: 1rem;
+  }
+  .topForm {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .email,
+  .password {
+    width: 45%;
+    margin: 0.5rem 0;
+  }
+  .btn {
+    width: 30%;
+    /* height: 6rem; */
+    /* padding: 1rem; */
+
+    border: none;
+    margin: 1rem 0;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+  }
+  form {
+    width: 50vw;
+    height: 100%;
+    gap: 1rem;
+  }
+  .step {
+    align-self: flex-start;
+  }
+  .writeUp h1 {
+    text-align: start;
+    align-self: self-start;
+  }
+  .email,
+  .password,
+  .country {
+    gap: 0.5rem;
+  }
+  .country {
+    padding: 1.5rem 0;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 1 20rem; */
+    gap: 2rem;
+    padding: 7rem 4rem;
+  }
+
+  main {
+    padding: 4rem;
+    display: flex;
+  }
+  .btn {
+    /* height: 3rem; */
+    /* padding: 1rem; */
+    text-align: center;
+  }
+  section {
+    display: flex;
+    width: 50vw;
+    height: 100%;
+  }
+  section img {
+    width: 100%;
+    height: 100%;
+  }
+  .or {
+    padding: 0.5rem 0;
+  }
+  .icons {
+    height: 6vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  body {
+  }
+
+  .email > input,
+  .password > input,
+  .country > input {
+    padding: 1.2rem;
+  }
+  .container {
+    padding: 0.1rem 2rem;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 90vh;
+    padding: 8rem 14rem;
+    gap: 8rem;
+  }
+  section {
+    width: 50vw;
+    height: 120%;
+  }
+}
