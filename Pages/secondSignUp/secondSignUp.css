@@ -222,13 +222,11 @@ section {
 
 @media screen and (min-width: 768px) {
   body {
-    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    border: 1px solid orange;
   }
   form {
     width: 50vw;
@@ -281,7 +279,6 @@ section {
 
 @media screen and (min-width: 1280px) {
   body {
-    border: 1px solid rgb(0, 255, 13);
   }
 }
 
