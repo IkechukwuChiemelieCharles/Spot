@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
+  /* outline: 1px solid red; */
 }
 :root {
   --white: #fdfdfd;
@@ -34,21 +36,15 @@ body {
 a {
   color: #dda704;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8331rem;
 }
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2.75rem 1rem 5.5rem 1rem;
   color: var(--white);
-}
-.writeUp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .overlay {
@@ -67,16 +63,17 @@ b {
 p {
   font-size: 1rem;
   text-align: center;
+  font-weight: normal;
 }
+
 h1 {
-  font-size: 2rem;
+  font-size: 1.7281rem;
   text-wrap: wrap;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   text-align: center;
+  line-height: 2.2313rem;
 }
-.signUpText {
-  padding: 1rem 0;
-}
+
 form {
   width: 100%;
   height: 100%;
@@ -84,7 +81,13 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
+}
+.writeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .topForm {
@@ -93,6 +96,8 @@ form {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 2.5rem 1rem 2rem 1rem;
+  gap: 1.5rem;
 }
 
 .email,
@@ -102,20 +107,22 @@ form {
   justify-content: center;
   align-items: start;
   width: 100%;
-  margin: 1rem 0;
-  gap: 0.1rem;
+  /* margin: 1rem 0; */
+  gap: 0.375rem;
 }
 .label1,
 .label2,
 .label3 {
-  padding: 0.5rem 0;
-  font-size: 1rem;
+  padding: 0.375rem 0;
+  font-size: 0.8331rem;
   text-wrap: nowrap;
 }
 
 .email > input,
 .password > input {
-  padding: 1rem;
+  height: 3rem;
+  /* width: 21.4375rem; */
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
   border-radius: 0.5rem;
   background-color: var(--black);
   border: 1px solid var(--border);
@@ -124,98 +131,156 @@ form {
 }
 input::placeholder {
   color: var(--placeHolder);
+  font-size: 1rem;
 }
 
 .btn {
   width: 100%;
-  height: 3rem;
+  min-height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--yellow);
   color: #fdfdfd;
   border: none;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   cursor: pointer;
   text-wrap: nowrap;
+  font-size: 1rem;
+  font-weight: 300;
 }
-
+.already {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  font-size: 0.8331rem;
+}
+.already a {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
 .or {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 0.625rem;
+  font-size: 0.8331rem;
+  margin-bottom: 2.5rem;
 }
 .or span {
-  border: 1px solid var(--white);
-  width: 40%;
+  border: 1px solid var(--placeHolder);
+  width: 50%;
   height: 0rem;
-}
-section {
-  display: none;
 }
 
 .icons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
   width: 100%;
-  height: 10vh;
+  height: 3rem;
+  gap: 1.625rem;
 }
 .icons span {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--yellow);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 .icons span i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+}
+section {
+  display: none;
 }
 
 @media screen and (min-width: 640px) {
   body {
-    /* background-color: red; */
     background-image: url(./img/Desktop\ background\ image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-
-  .container {
-    width: 100%;
-    height: 100vh;
+  main {
+    padding: 3.75rem 1.25rem 3.75rem 1.25rem;
   }
+
+  .overlay {
+    padding: 9.5rem 5.0625rem 9.4375rem 5.0625rem;
+    gap: 2rem;
+    backdrop-filter: blur(5px);
+  }
+
   .overlay {
     background-color: rgba(0, 0, 0, 0.61);
-    width: 100%;
-    height: 100vh;
-    padding: 6rem;
   }
-  form {
-    gap: 1rem;
+  .step {
+    font-size: 1rem;
   }
+  h1 {
+    font-size: 2.4881rem;
+    font-weight: bolder;
+    text-wrap: nowrap;
+    padding: 1.5rem 3rem;
+  }
+  .writeUp p {
+    font-size: 1.2rem;
+  }
+
   .topForm {
-    justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 3.75rem 2.5rem 2.5rem 2.5rem;
+    gap: 1.5rem;
+  }
+
+  form {
+    gap: 0;
+    justify-content: center;
+    padding: 0;
+    width: 80%;
   }
   .email,
   .password {
-    width: 45%;
+    width: 100%;
     margin: 0.5rem 0;
   }
-  .btn {
-    width: 30%;
-    /* height: 6rem; */
-    /* padding: 1rem; */
 
-    border: none;
-    margin: 1rem 0;
-    cursor: pointer;
+  .email > input,
+  .password > input {
+    width: 100%;
+  }
+  .btn {
+    width: 20%;
+    min-height: 3rem;
     align-self: flex-end;
+  }
+  .already {
+    margin-top: 3.75rem;
+    margin-bottom: 2rem;
+    font-size: 0.8331rem;
+  }
+
+  .or {
+    gap: 0.625rem;
+    font-size: 0.8331rem;
+    margin-bottom: 2rem;
+  }
+  .or span {
+    border: 1px solid var(--placeHolder);
+    width: 50%;
+    height: 0rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 3rem;
+    gap: 1.625rem;
   }
 }
 
@@ -226,89 +291,144 @@ section {
 
 @media screen and (min-width: 1024px) {
   body {
+    /* overflow: hidden; */
+  }
+  main {
+    padding: 0;
+    display: flex;
+    /* width: 100vw; */
+    overflow-x: hidden;
   }
   form {
-    width: 50vw;
+    width: 40vw;
     height: 100%;
-    gap: 1rem;
+    gap: 0;
   }
   .step {
     align-self: flex-start;
   }
+  .writeUp {
+    width: 40vw;
+  }
   .writeUp h1 {
     text-align: start;
     align-self: self-start;
-  }
-  .email,
-  .password,
-  .country {
-    gap: 0.5rem;
-  }
-  .country {
+    text-wrap: wrap;
     padding: 1.5rem 0;
   }
+  .writeUp p {
+    text-align: start;
+    align-self: self-start;
+  }
+  .topForm {
+    align-items: center;
+    width: 100%;
+    margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+    gap: 1rem;
+  }
+  .already {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8331rem;
+  }
+
   .overlay {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* flex: 1 1 20rem; */
     gap: 2rem;
-    padding: 7rem 4rem;
   }
 
-  main {
-    padding: 4rem;
-    display: flex;
-  }
   .btn {
-    /* height: 3rem; */
-    /* padding: 1rem; */
+    min-height: 3rem;
     text-align: center;
   }
-  section {
-    display: flex;
-    width: 50vw;
-    height: 100%;
+  .or {
+    gap: 0.625rem;
+    margin-bottom: 1.5rem;
   }
-  section img {
+  .imageCont {
+    display: flex;
+    width: 45vw;
+    height: 640px;
+  }
+  .imageCont img {
     width: 100%;
     height: 100%;
-  }
-  .or {
-    padding: 0.5rem 0;
-  }
-  .icons {
-    height: 6vh;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  body {
+  main {
+    padding: 4.5rem 8rem;
+  }
+  .overlay {
+    padding: 9rem 5rem;
+    width: 90vw;
   }
 }
 
 @media screen and (min-width: 1536px) {
-  body {
-  }
+  /* body {
+  } */
 
   .email > input,
   .password > input,
   .country > input {
     padding: 1.2rem;
   }
-  .container {
-    padding: 0.1rem 2rem;
+  main {
+    padding: 4.5rem 2.5rem;
   }
+  form {
+    width: 40vw;
+    height: 100%;
+    gap: 0;
+    padding: 0 0 2.625rem;
+  }
+
+  .writeUp h1 {
+    text-wrap: wrap;
+    padding: 1.5rem 0;
+  }
+
+  .topForm {
+    margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+    gap: 1.5rem;
+  }
+  .already {
+    margin-top: 3.75rem;
+    margin-bottom: 2rem;
+    font-size: 0.8331rem;
+  }
+
   .overlay {
-    background-color: rgba(0, 0, 0, 0.61);
-    width: 100%;
-    height: 90vh;
-    padding: 8rem 14rem;
-    gap: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
-  section {
-    width: 50vw;
-    height: 120%;
+
+  .btn {
+    min-height: 3rem;
+    text-align: center;
+  }
+  .or {
+    gap: 0.625rem;
+    margin-bottom: 2rem;
+  }
+
+  .imageCont {
+    display: flex;
+    width: 45vw;
+    height: 45rem;
+  }
+  .imageCont img {
+    width: 100%;
+    height: 100%;
+  }
+  .icons {
   }
 }
