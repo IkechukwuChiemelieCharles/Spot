@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+:root {
+  --white: #fdfdfd;
+  --yellow: #dda704;
+  --black: #0c0c0c;
+  --border: #e0e0e0;
+  --placeHolder: #676767;
+  --grey: #8b8b8b;
+
+  --greyFont: #d3d3d3;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--black);
+  font-family: "Open Sans";
+}
+header {
+  background-image: url(./img/1729774943213.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 60rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 18.8rem 1.6rem 3.88rem 1.6rem;
+}
+b {
+  color: var(--yellow);
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 4.8rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding: 0 1.6rem 0 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav i {
+  color: var(--white);
+}
+nav ul {
+  display: none;
+}
+
+nav .hamNlogo,
+nav .bellNsearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14.4rem;
+  /* gap: 1.6rem; */
+}
+nav .bellNsearch {
+  width: 18vw;
+}
+
+.ham {
+  font-size: 3.2rem;
+}
+.logo {
+  width: 4rem;
+}
+.bell {
+  font-size: 2.4rem;
+}
+.search {
+  font-size: 2.4rem;
+}
+.logo img {
+  width: 100%;
+}
+
+.TopRightIcon {
+  display: none;
+}
+
+.writeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 1.6rem;
+  /* margin-top: 20rem; */
+}
+.writeUp h1 {
+  color: var(--white);
+  font-size: 2.765rem;
+  line-height: 3.5rem;
+}
+.writeUp p {
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 2.4rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin: 4rem 0;
+  gap: 2.4rem;
+}
+.btn a {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.8rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+.btn .sign {
+  background-color: var(--yellow);
+  border: none;
+}
+
+/* .btn .login {
+  background: none;
+  border: 1px solid var(--yellow);
+}
+.btn .login a {
+  color: white;
+  font-size: 1.6rem;
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  padding: 10rem 1.6rem 25.2rem 1.6rem;
+  gap: 4rem;
+}
+
+.fourImgCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  width: 32.3rem;
+}
+
+.fourImgCont div {
+  width: 32.3rem;
+  height: 38.2rem;
+}
+.fourImgCont span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.fourImgCont div img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 34.3rem;
+  height: 56rem;
+}
+.text h1 {
+  font-size: 2.765rem;
+  color: var(--white);
+}
+.text h3 {
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.text p {
+  font-size: 1.333rem;
+  color: var(--greyFont);
+}
+.text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.6rem;
+}
+
+.text a {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.8rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  background-color: var(--yellow);
+  border: none;
+}

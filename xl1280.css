@@ -1,0 +1,13 @@
+body {
+  border: 1px solid green;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4rem;
+}
+
+.fourImgCont span {
+  gap: 0.5rem;
+}

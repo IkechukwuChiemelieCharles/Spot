@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./firstSignUp.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sm640.css" media="(min-width:640px)" />
+    <link rel="stylesheet" href="./md768.css" media="(min-width:768px)" />
+    <link rel="stylesheet" href="./lg1024.css" media="(min-width:1024px)" />
+    <link rel="stylesheet" href="./xl1280.css" media="(min-width:1280px)" />
+    <link rel="stylesheet" href="./xxl1536.css" media="(min-width:1536px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,58 +19,103 @@
       rel="stylesheet"
       href="./font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <title>Spot First Login Page</title>
+    <title>Home</title>
   </head>
   <body>
-    <main class="container">
-      <div class="overlay">
-        <form action="">
-          <div class="writeUp">
-            <p class="step">Step 1 of 2</p>
-            <h1>Start Your <b>Design</b> Journey!</h1>
-            <p class="signUpText">
-              Sign up today to gain insights, showcase your work, and become
-              part of a thriving design community.
-            </p>
+    <header>
+      <nav>
+        <div class="hamNlogo">
+          <div class="ham">
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
-          <div class="topForm">
-            <div class="email">
-              <label class="label1" for="">Enter Your Email Address</label>
-              <input placeholder="Email" type="email" required />
-            </div>
-            <div class="password">
-              <label class="label2" for="">Enter Your Password</label>
-              <input placeholder="Password" type="password" required />
-            </div>
+          <div class="logo">
+            <img src="./img/Logo.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">My Projects</a></li>
+          <li><a href="#">Communities</a></li>
+          <li><a href="#">Resources Page</a></li>
+        </ul>
+
+        <div class="bellNsearch">
+          <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="bell">
+            <i class="fa fa-bell" aria-hidden="true"></i>
           </div>
 
-          <a class="btn" href="./Pages/secondSignUp/secondSignUp.html"
-            >Continue</a
-          >
-          <p class="already">
-            Already have an account? <a href="#"> Sign In</a>
+          <div class="TopRightIcon">
+            <img src="./img/Top Right Icon.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <div class="writeUp">
+        <h1>Share Your <b>Designs</b>, Get Expert <b>Feedback</b>.</h1>
+        <p>
+          Join a community of creatives, showcase your work, and receive
+          valuable insights to level up your skills.
+        </p>
+      </div>
+
+      <div class="btn">
+        <a class="sign" href="">Explore Projects</a>
+      </div>
+    </header>
+    <main>
+      <div class="fourImgCont">
+        <span class="topImg">
+          <div class="bigger">
+            <img src="./img/Feedback image.png" alt="" />
+          </div>
+          <div class="smaller smaller1">
+            <img src="./img/Collaborate easily image.png" alt="" />
+          </div>
+        </span>
+        <span class="bottomImg">
+          <div class="smaller smaller2">
+            <img src="./img/Custom profile image.png" alt="" />
+          </div>
+          <div class="bigger">
+            <img src="./img/Project insight image.png" alt="" />
+          </div>
+        </span>
+      </div>
+      <div class="text">
+        <h1>Features Overview</h1>
+        <div class="text1">
+          <h3>Instant Feedback</h3>
+          <p>
+            Upload your designs and get quick, helpful feedback from other
+            designers to improve your work.
           </p>
-
-          <div class="or">
-            <span></span>
-            <p>OR</p>
-            <span></span>
-          </div>
-
-          <div class="icons">
-            <span><i class="fa fa-google" aria-hidden="true"></i> </span>
-            <span>
-              <i class="fa fa-apple" aria-hidden="true"></i>
-            </span>
-            <span><i class="fa fa-behance" aria-hidden="true"></i> </span>
-            <span><i class="fa fa-dribbble" aria-hidden="true"></i> </span>
-            <span><i class="fa fa-linkedin" aria-hidden="true"></i> </span>
-          </div>
-        </form>
-
-        <section class="imageCont">
-          <img src="./img/Hero Image.jpg" alt="" />
-        </section>
+        </div>
+        <div class="text2">
+          <h3>Collaborate Easily</h3>
+          <p>
+            Work together with other designers, share ideas, and create amazing
+            projects as a team.
+          </p>
+        </div>
+        <div class="text3">
+          <h3>Custom Profiles</h3>
+          <p>
+            Build a profile that shows off your skills and projects, making it
+            easy for others to see your work.
+          </p>
+        </div>
+        <div class="text4">
+          <h3>Project Insights</h3>
+          <p>
+            See how people interact with your designs and use the data to make
+            better decisions.
+          </p>
+        </div>
+        <a href="#">Explore Projects</a>
       </div>
     </main>
   </body>

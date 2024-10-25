@@ -11,14 +11,9 @@
   --placeHolder: #676767;
 }
 
-/* .open-sans-<uniquifier> {
-
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+html {
+  font-size: 62.5%;
+}
 
 @font-face {
   font-family: "Open Sans", sans-serif;
@@ -27,7 +22,6 @@
 
 body {
   background-color: var(--black);
-  font-size: 62.5%;
   font-family: "Open Sans";
 }
 
@@ -64,7 +58,7 @@ b {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 h1 {

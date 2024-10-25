@@ -1,0 +1,53 @@
+:root {
+  --white: #fdfdfd;
+  --yellow: #dda704;
+  --black: #0c0c0c;
+  --border: #e0e0e0;
+  --placeHolder: #676767;
+  --grey: #8b8b8b;
+  --greyFont: #d3d3d3;
+}
+body {
+  border: 1px solid purple;
+}
+nav {
+  border: 1px solid brown;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.writeUp h1 {
+  font-size: 4.778rem;
+  line-height: 5.5rem;
+}
+
+.ham {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+nav ul a,
+li {
+  list-style: none;
+  font-size: 1.6rem;
+  color: var(--grey);
+}
+
+nav a:active {
+  color: var(--yellow);
+}
+
+main {
+  flex-direction: row;
+}
+
+.fourImgCont span {
+  gap: 2rem;
+}
+.text a {
+  align-self: self-start;
+}
