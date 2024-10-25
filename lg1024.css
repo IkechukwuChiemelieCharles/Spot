@@ -7,11 +7,10 @@
   --grey: #8b8b8b;
   --greyFont: #d3d3d3;
 }
-body {
+/* body {
   border: 1px solid purple;
-}
+} */
 nav {
-  border: 1px solid brown;
   padding: 2rem 4rem 2rem 4rem;
 }
 

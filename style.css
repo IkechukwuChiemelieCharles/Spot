@@ -242,7 +242,6 @@ main {
   align-items: center;
   gap: 4rem;
   height: 266rem;
-  border: 1px solid red;
 }
 .section1 h1 {
   color: white;

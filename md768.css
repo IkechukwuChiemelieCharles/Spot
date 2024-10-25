@@ -1,11 +1,9 @@
 body {
-  border: 1px solid white;
 }
 
 .section1 {
   gap: 4rem;
   height: 192.8rem;
-  border: 1px solid red;
 }
 
 .arrow {
