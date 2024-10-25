@@ -1,3 +1,63 @@
 body {
   border: 1px solid white;
 }
+
+.section1 {
+  gap: 4rem;
+  height: 192.8rem;
+  border: 1px solid red;
+}
+
+.arrow {
+  display: flex;
+}
+.topArrCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 69.6rem;
+  gap: 2rem;
+}
+.arr1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-self: start;
+  gap: 10.6rem;
+  width: 69.6rem;
+  margin-bottom: -20rem;
+}
+
+.arr2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  gap: 7.6rem;
+  margin-top: -20rem;
+
+  width: 100%;
+}
+.arr2 .arrow {
+  align-self: self-end;
+}
+
+.bottomDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 69.6rem;
+}
+
+.arr3 {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  align-items: start;
+  width: 100%;
+}
+.lone {
+  align-self: flex-end;
+  margin-top: -40rem;
+}

@@ -51,3 +51,11 @@ main {
 .text a {
   align-self: self-start;
 }
+
+.topArrCont {
+  width: 72.6rem;
+}
+
+.bottomDiv {
+  width: 72.6rem;
+}
