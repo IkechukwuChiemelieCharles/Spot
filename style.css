@@ -344,13 +344,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  border: 1px solid green;
 }
 .flexXl {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  border: 1px solid blue;
 }
 .box1 {
   display: flex;
@@ -409,7 +407,6 @@ main {
   align-items: center;
   /* align-self: flex-end; */
   width: 100%;
-  border: 1px slateblue solid;
   height: 2.2rem;
   gap: 2rem;
 }
