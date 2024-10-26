@@ -107,3 +107,20 @@ header {
   font-size: 1.6rem;
   color: var(--greyFont);
 }
+
+.section2 {
+  height: 187.5rem;
+  width: 100%;
+}
+
+.flexSm {
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.box1 {
+  width: 28.8rem;
+  height: 35.6rem;
+  border: 1px solid green;
+}
