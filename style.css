@@ -65,10 +65,11 @@ nav ul {
 nav .hamNlogo,
 nav .bellNsearch {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 14.4rem;
   /* gap: 1.6rem; */
+  /* border: 1px solid red; */
 }
 nav .bellNsearch {
   width: 18vw;
@@ -78,7 +79,8 @@ nav .bellNsearch {
   font-size: 3.2rem;
 }
 .logo {
-  width: 4rem;
+  width: 5.2rem;
+  height: 3.6rem;
 }
 .bell {
   font-size: 2.4rem;
@@ -88,6 +90,7 @@ nav .bellNsearch {
 }
 .logo img {
   width: 100%;
+  height: 100%;
 }
 
 .TopRightIcon {
@@ -294,4 +297,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+.deskSection {
+  display: none;
 }

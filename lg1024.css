@@ -40,6 +40,11 @@ nav a:active {
   color: var(--yellow);
 }
 
+.logo {
+  width: 8rem;
+  height: 5.6rem;
+}
+
 main {
   flex-direction: row;
 }
