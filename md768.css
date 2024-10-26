@@ -59,3 +59,7 @@ body {
   align-self: flex-end;
   margin-top: -40rem;
 }
+
+.deskSection {
+  display: none;
+}
