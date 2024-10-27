@@ -51,7 +51,7 @@ nav {
   align-items: center;
   background-color: var(--black);
   padding: 0 1.6rem 0 1.6rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -310,8 +310,8 @@ main {
   align-items: center;
   width: 100vw;
   color: white;
-  height: 332.4rem;
-  padding: 18rem 1.6rem;
+  height: 348.4rem;
+  padding: 18rem 1.6rem 0 1.6rem;
 }
 
 .section2 .topWriteUp {
@@ -359,8 +359,14 @@ main {
   height: 35.6rem;
 }
 
-.bgBox1 {
-  background-image: url(./img/Featured\ Card\ Container-1.png);
+.bgBox1,
+.bgBox2,
+.bgBox3,
+.bgBox4,
+.bgBox5,
+.bgBox6,
+.bgBox7,
+.bgBox8 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -371,6 +377,31 @@ main {
   justify-content: space-between;
   font-size: 1.333rem;
   text-wrap: nowrap;
+}
+.bgBox1 {
+  background-image: url(img/Frame\ 1000001463.jpg);
+}
+
+.bgBox2 {
+  background-image: url(./img/Featured\ Card\ Container-1.png);
+}
+.bgBox3 {
+  background-image: url(./img/Featured\ Card\ Container-2.png);
+}
+.bgBox4 {
+  background-image: url(./img/Featured\ Card\ Container-3.png);
+}
+.bgBox5 {
+  background-image: url(./img/Small\ Card\ Container.png);
+}
+.bgBox6 {
+  background-image: url(./img/Small\ Card\ Container-1.png);
+}
+.bgBox7 {
+  background-image: url(./img/Small\ Card\ Container-2.png);
+}
+.bgBox8 {
+  background-image: url(./img/Small\ Card\ Container-3.png);
 }
 
 .icons {
@@ -419,4 +450,17 @@ main {
   width: 3.6rem;
   /* border: 1px solid red; */
   font-size: 1.333rem;
+}
+
+.section2 a {
+  background-color: var(--yellow);
+  text-decoration: none;
+  color: var(--white);
+  width: 15.1rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
 }
