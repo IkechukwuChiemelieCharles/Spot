@@ -11,15 +11,6 @@
   --placeHolder: #676767;
 }
 
-/* .open-sans-<uniquifier> {
-  
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  } */
-
 @font-face {
   font-family: "Open Sans", sans-serif;
   src: url(./font/OpenSans-VariableFont_wdth\wght.ttf);
@@ -37,6 +28,17 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
+  color: var(--white);
+  position: relative;
+}
+
+.closeBtn {
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.closeBtn a {
   color: var(--white);
 }
 
