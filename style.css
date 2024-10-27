@@ -197,7 +197,8 @@ main {
   justify-content: space-between;
   align-items: center;
   color: white;
-  width: 34.3rem;
+  /* width: 34.3rem; */
+  width: 100%;
   height: 56rem;
 }
 .text h1 {
