@@ -63,3 +63,7 @@ body {
 .deskSection {
   display: none;
 }
+
+.section3 {
+  gap: 5.2rem;
+}

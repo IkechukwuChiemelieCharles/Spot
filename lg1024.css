@@ -40,6 +40,10 @@ nav a:active {
   color: var(--yellow);
 }
 
+.links {
+  display: flex;
+}
+
 .logo {
   width: 8rem;
   height: 5.6rem;

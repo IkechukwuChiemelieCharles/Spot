@@ -128,3 +128,29 @@ header {
   width: 28.8rem;
   height: 35.6rem;
 }
+
+.roundedContainer {
+  width: 70rem;
+  /* border: 1px solid red; */
+}
+
+.roundimgCont {
+  width: 34.8rem;
+  height: 34.8rem;
+  align-self: flex-start;
+}
+
+.roundedProfile {
+  width: 30.8rem;
+}
+
+.rounded {
+  width: 54rem;
+  min-height: 48rem;
+
+  border-top-right-radius: 30rem;
+
+  padding: 0 4rem 8.6rem 2.4rem;
+
+  font-size: 1.6rem;
+}

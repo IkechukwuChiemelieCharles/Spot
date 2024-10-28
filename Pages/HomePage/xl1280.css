@@ -135,3 +135,24 @@ nav ul {
   width: 28.8rem;
   height: 35.6rem;
 }
+.section3 {
+  height: 148.7rem;
+
+  gap: 12rem;
+}
+
+.roundedContainer {
+  width: 60rem;
+}
+
+.roundimgCont {
+  height: 34.8rem;
+  margin-left: -2rem;
+}
+
+.topRounded,
+.bottomRounded {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
