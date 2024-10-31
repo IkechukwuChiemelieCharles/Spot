@@ -1,0 +1,413 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("Images/Desktop\ background\ image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.come {
+  font-size: 3.98rem;
+  margin-bottom: 2.4rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+.signer {
+  color: rgb(221, 167, 4);
+}
+
+.login {
+  font-size: 1.92rem;
+  margin-bottom: 5.9rem;
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.forget {
+  margin-bottom: 3.3rem;
+}
+
+.right-section-image {
+  width: 618px;
+  height: 720px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+#label1 {
+  font-size: 1.33rem;
+}
+
+#label2 {
+  font-size: 1.33rem;
+}
+
+#email {
+  width: 45rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+
+#password {
+  width: 45rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+
+.word {
+  text-decoration-color: rgb(181, 137, 5);
+  color: rgb(181, 137, 5);
+  font-size: 1.33rem;
+}
+
+#submit {
+  border: none;
+  font-size: 1.6rem;
+  background-color: rgb(221, 167, 4);
+  padding: 1.6rem 2rem;
+  border-radius: 0.6rem;
+  margin-left: 37rem;
+  margin-bottom: 6rem;
+}
+
+.form {
+  margin-left: 3rem;
+}
+
+.have {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#sign {
+  color: rgb(181, 137, 5);
+  text-decoration: none;
+}
+
+.account {
+  margin-left: 15rem;
+  margin-bottom: 3.2rem;
+}
+
+/* .or {
+  color: white;
+  font-size: 1.33rem;
+  margin-left: 23.5rem;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("Images/Desktop\ background\ image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.4rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.fade {
+  max-width: 100%;
+}
+
+.come {
+  font-size: 3.98rem;
+  margin-bottom: 2.4rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+.signer {
+  color: rgb(221, 167, 4);
+}
+
+.login {
+  font-size: 1.92rem;
+  margin-bottom: 5.9rem;
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+.form {
+  margin-left: 3rem;
+  width: 100%;
+  max-width: 45rem;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.4rem;
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+
+#label1,
+#label2 {
+  font-size: 1.33rem;
+  color: white;
+}
+
+#email,
+#password {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.6rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+
+.forget {
+  margin-bottom: 3.3rem;
+}
+
+.word {
+  text-decoration-color: rgb(181, 137, 5);
+  color: rgb(181, 137, 5);
+  font-size: 1.33rem;
+}
+
+.log {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6rem;
+}
+
+#submit {
+  border: none;
+  font-size: 1.6rem;
+  background-color: rgb(221, 167, 4);
+  padding: 1.6rem 2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgb(181, 137, 5);
+}
+
+.account {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.have {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#sign {
+  color: rgb(181, 137, 5);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.2rem;
+  background-color: rgb(103, 103, 103);
+  margin: 0 1rem;
+}
+
+.or-text {
+  font-size: 1.33rem;
+  color: white;
+}
+
+.icons {
+  text-align: center;
+}
+
+.fa-google {
+  color: white;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.right-section-image {
+  max-width: 618px;
+  height: auto;
+}
+
+.right-section-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .welcome {
+    gap: 3rem;
+  }
+
+  .right-section-image {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  .welcome {
+    gap: 2rem;
+  }
+
+  .form {
+    margin-left: 2rem;
+  }
+
+  .right-section-image {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .right-section-image {
+    /* order: -1; */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .come {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .login {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .account {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 43.75%; /* 7px */
+  }
+
+  .welcome {
+    padding: 2rem 1rem;
+  }
+
+  .come {
+    font-size: 3.2rem;
+  }
+
+  .login {
+    font-size: 1.6rem;
+  }
+
+  #submit {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .log {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .welcome {
+    padding: 1rem;
+  }
+
+  .login {
+    margin-bottom: 3rem;
+  }
+
+  .forget {
+    margin-bottom: 2rem;
+  }
+
+  .log {
+    margin-bottom: 3rem;
+  }
+}
