@@ -1,0 +1,118 @@
+body {
+}
+nav {
+  height: 7.2rem;
+}
+
+header {
+  /* background-image: url(./img/1729774943213.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  width: 100vw;
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 39.7rem 2.4rem 0 2.4rem;
+}
+
+.TopRightIcon {
+  display: block;
+}
+
+.writeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60.6rem;
+  gap: 1.6rem;
+  /* margin-top: 20rem; */
+}
+
+.writeUp h1 {
+  font-size: 4.778rem;
+  line-height: 5.5rem;
+}
+
+.writeUp p {
+  font-size: 1.92rem;
+  line-height: 2.72rem;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32.2rem;
+
+  margin: 4rem 0;
+  gap: 2.4rem;
+}
+
+.btn a {
+  width: 14.6rem;
+}
+
+.section2 {
+  height: 187.5rem;
+  width: 100%;
+}
+
+.flexSm {
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.box1 {
+  width: 28.8rem;
+  height: 35.6rem;
+}
+
+footer {
+  height: 115.6rem;
+}
+footer .firstFooter {
+  width: 90%;
+}
+footer .firstFooter h5 {
+  display: none;
+}
+footer .firstFooter .uls .ul1,
+.ul2 {
+  flex-direction: row;
+  text-wrap: nowrap;
+}
+footer .secondFooter {
+  width: 90%;
+}
+footer form {
+  flex-direction: row;
+  gap: 0;
+}
+footer .secondFooterright {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.4rem;
+}
+footer form input {
+  width: 28rem;
+  height: 5.6rem;
+}
+footer form button {
+  width: 14rem;
+  height: 5.6rem;
+  gap: 1rem;
+}
+footer .thirdFooter {
+  height: 6rem;
+}
+footer .thirdFooter ul {
+  flex-direction: row;
+}
