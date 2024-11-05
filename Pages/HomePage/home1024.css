@@ -44,22 +44,3 @@ nav a:active {
   width: 8rem;
   height: 5.6rem;
 }
-
-main {
-  flex-direction: row;
-}
-
-.fourImgCont span {
-  gap: 2rem;
-}
-.text a {
-  align-self: self-start;
-}
-
-.topArrCont {
-  width: 72.6rem;
-}
-
-.bottomDiv {
-  width: 72.6rem;
-}
