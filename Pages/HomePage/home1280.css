@@ -135,7 +135,7 @@ nav ul {
   width: 28.8rem;
   height: 35.6rem;
 }
-.section3 {
+/* .section3 {
   height: 148.7rem;
 
   gap: 12rem;
@@ -155,4 +155,51 @@ nav ul {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+} */
+article {
+  gap: 8rem;
+}
+
+article .boxes {
+  flex-direction: row;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+article .fa-caret-right {
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  top: 0;
+  right: 5rem;
+  /* box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5); */
+
+  /* text-shadow: 2rem 2rem 5rem black; */
+  /* text-shadow: -5px 8px 5px rgba(0, 0, 0, 0.5), 5px 5px 2px rgba(0, 0, 0, 0.5),
+    -5px -8px 5px rgba(0, 0, 0, 0.5); */
+}
+article .fa-caret-right {
+  display: flex;
+
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  top: 0;
+  right: 5rem;
+  cursor: pointer;
+}
+article .fa-caret-left {
+  display: flex;
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  top: 0;
+  left: 5rem;
+  cursor: pointer;
+}
+
+article .fa-caret-left:hover,
+article .fa-caret-right:hover {
+  color: var(--yellow);
 }

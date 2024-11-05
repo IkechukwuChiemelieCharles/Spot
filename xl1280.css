@@ -189,6 +189,7 @@ aside .firstPara {
 }
 footer {
   height: 64rem;
+  margin-top: 5rem;
 }
 
 footer .firstFooter .uls {

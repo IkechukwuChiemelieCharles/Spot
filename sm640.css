@@ -173,6 +173,9 @@ aside .left {
   width: 69.6rem;
   height: 69.6rem;
 }
+.cont {
+  gap: 4rem;
+}
 aside .right {
   width: 69.6rem;
   height: 56.8rem;
@@ -185,6 +188,7 @@ aside .right p {
 }
 footer {
   height: 115.6rem;
+  margin-top: 50rem;
 }
 footer .firstFooter {
   width: 90%;
