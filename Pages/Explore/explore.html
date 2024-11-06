@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore</title>
     <link rel="stylesheet" href="explore.css" />
+    <link
+      rel="shortcut icon"
+      href="Images/Spot_logo-removebg-preview.png"
+      type="image/x-icon"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +26,108 @@
   <body>
     <header>
       <nav>
-        <img src="Images/" alt="" />
+        <div class="logo">
+          <img src="Images/Spot_logo-removebg-preview.png" alt="Spot logo" />
+        </div>
+          <div class="un-list">
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="ore">Explore</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="#">Communities</a></li>
+            <li><a href="#">Resources Page</a></li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+          <div class="icon-pics">
+          <i class="fa-solid fa-magnifying-glass" id="bells"></i>
+          <i class="fa-solid fa-bell" id="bells"></i>
+        </div>
+        <div class="top-right">
+          <img src="Images/Top Right Icon.png" alt="Icon">
+        </div>
+        </div>
       </nav>
     </header>
-    <p>Hello world</p>
+
+    <section class="hero">
+      <div class="man">
+        <div class="car">
+          <h2 class="jump">
+            Jump Into a World of <span class="sign">Design</span> Magic
+          </h2>
+          <p class="fuel">
+            Explore exciting projects, discover new ideas, and fuel your
+            creativity with designs
+            <span class="world"> from around the world.</span>
+          </p>
+        </div>
+        <div class="search1">
+          <div class="share">
+            <form action="">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Find projects, share feedback, and explore what inspires you"
+              />
+              <button type="submit" id="maad">Search</button>
+            </form>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cover">
+      <div class="dis">
+        <div class="discover">
+          <p class="disc"><a href="#">Discover</a></p>
+          <p class="ani"><a href="#">Animations</a></p>
+          <p class="illu"><a href="#">Illustrations</a></p>
+          <p class="graph"><a href="#">Graphics design</a></p>
+          <p class="ui"><a href="#">UI/UX</a></p>
+        </div>
+        <div class="small-card-container">
+          <div class="product">
+          <!-- <p class="desi">Product Design</p> -->
+          <img src="Images/Small Card Container.png" alt="Chicken Republic Menu" class="menu">
+          <img src="Images/Small Card Container.png" alt="Chicken Republic Menu" class="menu">
+          <img src="Images/Small Card Container.png" alt="Chicken Republic Menu" class="menu">
+          <img src="Images/Small Card Container.png" alt="Chicken Republic Menu" class="menu">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+
+      <div class="spot">
+        <img src="Images/Spot_logo-removebg-preview.png" alt="Spot logo">
+      </div>
+      <div class="below">
+        <p class="ask"><a href="#">Ask for Feedback</a></p>
+        <p class="join"><a href="#">Join Discussions</a></p>
+        <p class="start"><a href="#">Start Collaborating</a></p>
+        <p class="load"><a href="#">Upload Your Project</a></p>
+        <p class="contact"><a href="#">Contact Us</a></p>
+        <p class="Help"><a href="#">Help Center</a></p>
+      </div>
+      <div class="social">
+        <div class="scribe">
+          <p class="lize"><b></b>Socialize</p>
+          <p class="follow">Follow us on all our social media channels</p>
+          <p class="media"> <i class="fa-brands fa-google" id="s-media"></i> <i class="fa-brands fa-apple" id="s-media"></i> <i class="fa-brands fa-behance" id="s-media"></i> <i class="fa-brands fa-dribbble" id="s-media"></i> <i class="fa-brands fa-linkedin-in" id="s-media"></i></p>
+        </div>
+
+        <div class="subb">
+          <p class="stay">Stay Updated</p>
+          <p class="news">Sign up for our newsletter to get the latest updates, <span class="tips">design tips, and community highlights!</span></p>
+          <form action="">
+            <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+            <button type="submit" id="mit">Suscribe <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+      
+    </footer>
   </body>
 </html>

@@ -12,3 +12,267 @@ body {
 html {
   font-size: 62.5%;
 }
+
+nav img {
+  width: 80px;
+  /* height: 56px; */
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ore {
+  color: rgb(221, 167, 4);
+}
+
+#bells {
+  font-size: 2.5rem;
+  margin: 2.5rem;
+}
+
+.nav-icons img {
+  width: 32px;
+  height: 32px;
+  margin: 2.5rem;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 10rem; */
+  background-color: black;
+  color: white;
+  height: 12vh;
+  position: fixed;
+  width: 100%;
+}
+
+.car {
+  padding-top: 10rem;
+  text-align: center;
+  width: 100%;
+}
+
+.world {
+  display: block;
+}
+
+.man {
+  text-align: center;
+  color: white;
+  padding-top: 8rem;
+}
+
+.jump {
+  font-size: 4.778rem;
+  margin-bottom: 2.4rem;
+}
+
+.sign {
+  color: rgb(221, 167, 4);
+}
+
+.fuel {
+  font-size: 1.92rem;
+  margin-bottom: 4rem;
+}
+
+.search1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#search {
+  font-size: 1.6rem;
+  border: 0.2rem solid black;
+  width: 75rem;
+  height: 5rem;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.8rem;
+  margin-right: 1.2rem;
+  text-align: center;
+}
+
+.pro {
+  font-size: 1.5rem;
+}
+
+#maad {
+  /* text-decoration: none; */
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(221, 167, 4);
+  padding: 1.5rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+.hero {
+  background-image: url("Images/Hero\ Image\ desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 70rem;
+}
+
+.discover {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+}
+
+.discover a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cover {
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.disc a {
+  color: white;
+  background-color: rgb(221, 167, 4);
+  padding: 1.5rem 4rem;
+  border-radius: 0.2rem;
+}
+
+.menu {
+  width: 290px;
+}
+
+.small-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 8.5rem;
+}
+
+.desi {
+  /* font-size: 1.6rem;
+  margin-top: 5rem; */
+  /* z-index: 1; */
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 4rem;
+}
+
+.spot img {
+  width: 300px;
+}
+
+.spot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.below a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.below {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.lize {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.follow {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+#s-media {
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(221, 167, 4);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.stay {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.news {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.tips {
+  display: block;
+}
+
+#email {
+  width: 27rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  background-color: black;
+  padding-left: 2rem;
+  border: 0.2rem solid rgb(221, 167, 4);
+}
+
+#mit {
+  width: 11rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(221, 167, 4);
+  color: white;
+  font-size: 1.6rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10rem;
+}
