@@ -201,3 +201,97 @@ article .box h5 {
 article .box span {
   font-size: 1.6rem;
 }
+
+.community .h1 {
+  width: 69.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+.btn {
+  flex-direction: row;
+  width: 36rem;
+  margin: 4rem 0;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.community .groupImgCont {
+  width: 68rem;
+  height: 14rem;
+}
+.community h1 {
+  font-size: 3.981rem;
+}
+.community p {
+  font-size: 1.6rem;
+}
+
+aside .firstPara {
+  font-size: 1.92rem;
+  width: 69.6rem;
+}
+aside .left {
+  width: 69.6rem;
+  height: 69.6rem;
+}
+.cont {
+  gap: 4rem;
+}
+aside .right {
+  width: 69.6rem;
+  height: 56.8rem;
+}
+aside .right h4 {
+  font-size: 1.92rem;
+}
+aside .right p {
+  font-size: 1.6rem;
+}
+
+footer {
+  height: 115.6rem;
+  margin-top: 50rem;
+}
+footer .firstFooter {
+  width: 90%;
+}
+footer .firstFooter h5 {
+  display: none;
+}
+footer .firstFooter .uls .ul1,
+.ul2 {
+  flex-direction: row;
+  text-wrap: nowrap;
+}
+footer .secondFooter {
+  width: 90%;
+}
+footer form {
+  flex-direction: row;
+  gap: 0;
+}
+footer .secondFooterright {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.4rem;
+}
+footer form input {
+  width: 28rem;
+  height: 5.6rem;
+}
+footer form button {
+  width: 14rem;
+  height: 5.6rem;
+  gap: 1rem;
+  margin-left: -5rem;
+}
+footer .thirdFooter {
+  height: 6rem;
+}
+footer .thirdFooter ul {
+  flex-direction: row;
+}
