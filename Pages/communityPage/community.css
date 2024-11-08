@@ -49,6 +49,12 @@ header {
 b {
   color: var(--yellow);
 }
+a:hover {
+  color: var(--yellow);
+}
+.sub a:hover {
+  color: var(--white);
+}
 a {
   text-decoration: none;
 }
@@ -178,6 +184,7 @@ nav .bellNsearch {
   background: none;
   border: 1px solid var(--borderYello);
   padding-left: 1rem;
+  color: var(--white);
 }
 .input input::placeholder {
   color: var(--greyFont);
@@ -206,22 +213,24 @@ main {
   align-items: center;
   width: 35.9rem;
   height: 4.6rem;
+  /* gap: 4rem; */
 }
 .topLinks li,
-a {
-  width: 11.9rem;
+.topLinks a {
+  /* width: 11.9rem; */
   height: 4.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-wrap: nowrap;
+  padding: 2rem;
 }
 .topLinks a:hover {
   background-color: var(--yellow);
   color: var(--white);
 }
 
-.search {
+.searchInp {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -232,8 +241,9 @@ a {
   border-radius: 0.6rem;
   padding-left: 2rem;
   color: var(--backGroundGray);
+  font-size: 2rem;
 }
-.search input {
+.searchInp input {
   background: none;
   border: none;
   color: white;
@@ -249,6 +259,10 @@ main .posts {
   align-items: center;
   gap: 1.6rem;
   margin-top: 6rem;
+  width: 37.5rem;
+  padding: 2.4rem 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--backGroundGray);
 }
 
 .posts .top {
@@ -326,6 +340,19 @@ main .posts {
 }
 .posts .mid .postImgCont img {
   width: 100%;
+  height: 100%;
+}
+
+.posts .mid .postImgCont2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17.1rem;
+  width: 34.3rem;
+}
+
+.posts .mid .postImgCont2 img {
+  width: 50%;
   height: 100%;
 }
 

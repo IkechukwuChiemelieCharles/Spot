@@ -5,17 +5,18 @@ nav {
 }
 
 header {
-  /* background-image: url(./img/1729774943213.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover; */
   width: 100vw;
   height: 110rem;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  padding: 39.7rem 2.4rem 0 2.4rem;
+  padding: 39.7rem 2.4rem 0 0;
+  gap: 12rem;
+}
+
+.overlay {
+  height: 110rem;
 }
 
 .TopRightIcon {
@@ -42,39 +43,25 @@ header {
   font-size: 1.92rem;
   line-height: 2.72rem;
 }
-.btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 32.2rem;
 
-  margin: 4rem 0;
-  gap: 2.4rem;
+.input {
+  width: 49.6rem;
+  height: 12rem;
 }
 
-.btn a {
-  width: 14.6rem;
+.input img {
+  width: 8rem;
+  height: 8rem;
 }
-
-.section2 {
-  height: 187.5rem;
-  width: 100%;
-}
-
-.flexSm {
-  justify-content: center;
-  gap: 2rem;
-  flex-direction: row;
-}
-
-.box1 {
-  width: 28.8rem;
-  height: 35.6rem;
+.input input {
+  width: 34.6rem;
+  height: 5.6rem;
+  padding-left: 2rem;
 }
 
 footer {
   height: 115.6rem;
+  margin-top: 50rem;
 }
 footer .firstFooter {
   width: 90%;
