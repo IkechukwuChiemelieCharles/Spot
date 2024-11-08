@@ -12,7 +12,6 @@ header {
   /* justify-content: center; */
   align-items: center;
   padding: 39.7rem 2.4rem 0 0;
-  gap: 12rem;
 }
 
 .overlay {
@@ -44,24 +43,9 @@ header {
   line-height: 2.72rem;
 }
 
-.input {
-  width: 49.6rem;
-  height: 12rem;
-}
-
-.input img {
-  width: 8rem;
-  height: 8rem;
-}
-.input input {
-  width: 34.6rem;
-  height: 5.6rem;
-  padding-left: 2rem;
-}
-
 footer {
   height: 115.6rem;
-  margin-top: 50rem;
+  /* margin-top: 50rem; */
 }
 footer .firstFooter {
   width: 90%;

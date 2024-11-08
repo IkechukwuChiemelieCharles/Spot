@@ -45,7 +45,6 @@ header {
   gap: 1rem;
   color: var(--grey);
   /* align-self: start; */
-  border: 1px solid red;
   width: 34.3rem;
 }
 .breadCrumbs b {
