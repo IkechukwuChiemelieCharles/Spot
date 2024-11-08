@@ -15,7 +15,6 @@ html {
 
 nav img {
   width: 80px;
-  /* height: 56px; */
 }
 
 .list {
@@ -54,7 +53,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* gap: 10rem; */
   background-color: black;
   color: white;
   height: 12vh;

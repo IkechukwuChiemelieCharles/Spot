@@ -385,6 +385,10 @@ footer {
     font-size: 56.25%;
   }
 
+  .un-list {
+    display: none;
+  }
+
   .connect {
     font-size: 4.2rem;
   }
@@ -415,6 +419,10 @@ footer {
 
   nav {
     padding: 0 2rem;
+  }
+
+  .un-list {
+    display: none;
   }
 
   .list li a {
