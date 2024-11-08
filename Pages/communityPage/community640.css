@@ -1,0 +1,105 @@
+body {
+}
+nav {
+  height: 7.2rem;
+}
+
+header {
+  width: 100vw;
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 39.7rem 2.4rem 0 0;
+  gap: 12rem;
+}
+
+.overlay {
+  height: 110rem;
+}
+
+.TopRightIcon {
+  display: block;
+}
+
+.writeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60.6rem;
+  gap: 1.6rem;
+  /* margin-top: 20rem; */
+}
+
+.writeUp h1 {
+  font-size: 4.778rem;
+  line-height: 5.5rem;
+}
+
+.writeUp p {
+  font-size: 1.92rem;
+  line-height: 2.72rem;
+}
+
+.input {
+  width: 49.6rem;
+  height: 12rem;
+}
+
+.input img {
+  width: 8rem;
+  height: 8rem;
+}
+.input input {
+  width: 34.6rem;
+  height: 5.6rem;
+  padding-left: 2rem;
+}
+
+footer {
+  height: 115.6rem;
+  margin-top: 50rem;
+}
+footer .firstFooter {
+  width: 90%;
+}
+footer .firstFooter h5 {
+  display: none;
+}
+footer .firstFooter .uls .ul1,
+.ul2 {
+  flex-direction: row;
+  text-wrap: nowrap;
+}
+footer .secondFooter {
+  width: 90%;
+}
+footer form {
+  flex-direction: row;
+  gap: 0;
+}
+footer .secondFooterright {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.4rem;
+}
+footer form input {
+  width: 28rem;
+  height: 5.6rem;
+}
+footer form button {
+  width: 14rem;
+  height: 5.6rem;
+  gap: 1rem;
+}
+footer .thirdFooter {
+  height: 6rem;
+}
+footer .thirdFooter ul {
+  flex-direction: row;
+}

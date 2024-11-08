@@ -1,0 +1,64 @@
+body {
+}
+
+:root {
+  --white: #fdfdfd;
+  --yellow: #dda704;
+  --black: #0c0c0c;
+  --border: #e0e0e0;
+  --placeHolder: #676767;
+  --grey: #8b8b8b;
+  --backGroundGray: #434343;
+  --veryDarkGrey: #1b1b1b;
+  --greyFont: #d3d3d3;
+  --borderYello: #ffe9a7;
+  --lightGrey: #d3d3d3;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4rem;
+}
+
+.section2 {
+  height: 116.3rem;
+  width: 100%;
+}
+
+.flexXl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.box1 {
+  width: 28.8rem;
+  height: 35.6rem;
+}
+.section3 {
+  height: 148.7rem;
+  gap: 12rem;
+}
+footer {
+  height: 64rem;
+}
+
+footer .firstFooter .uls {
+  flex-direction: row;
+}
+footer .secondFooter {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  padding: 0 0;
+}
+footer .secondFooter .secondFooterright {
+  width: 42rem;
+  gap: 3rem;
+}
+footer .fourthFooter {
+  display: none;
+}
