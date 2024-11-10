@@ -49,21 +49,16 @@ nav a:active {
   height: 5.6rem;
 }
 
-main {
-  flex-direction: row;
+.topLinks {
+  /* width: 66.5rem; */
+  width: 80%;
+  gap: 8rem;
 }
 
-.fourImgCont span {
-  gap: 2rem;
-}
-.text a {
-  align-self: self-start;
+.topLinks ul {
+  justify-content: center;
 }
 
-.topArrCont {
-  width: 72.6rem;
-}
-
-.bottomDiv {
-  width: 72.6rem;
+.searchInp {
+  align-self: flex-end;
 }

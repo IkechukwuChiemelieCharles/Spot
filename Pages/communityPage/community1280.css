@@ -21,27 +21,35 @@ nav ul {
   gap: 4.4rem;
 }
 
-.section2 {
-  height: 116.3rem;
-  width: 100%;
+.posts .top {
+  justify-content: start;
+  width: 79.6rem;
+  align-self: center;
+}
+.posts .mid {
+  width: 79.6rem;
 }
 
-.flexXl {
+/* .posts .top {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   gap: 2rem;
-  flex-direction: row;
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 1rem;
+  width: 100%;
+} */
+main .posts {
+  gap: 1.6rem;
+  width: 96rem;
+}
+.posts .mid .postImgCont {
+  width: 79.6rem;
+  height: 88rem;
+  align-self: center;
 }
 
-.box1 {
-  width: 28.8rem;
-  height: 35.6rem;
-}
-.section3 {
-  height: 148.7rem;
-  gap: 12rem;
-}
 footer {
   height: 64rem;
 }
