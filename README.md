@@ -11,8 +11,6 @@ The name implies a dedicated space where designers can feel comfortable both giv
 - [Contributors](#Contributors)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Links
