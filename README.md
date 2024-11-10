@@ -57,8 +57,8 @@ Zainab Olawunmi Oteshile
 
 Ndupu Chidubem
 
-- LinkedIn - [@yourusername](https://www.twitter.com/yourusername)
-- Twitter - [https://x.com/fl_nade?s=09](https://x.com/fl_nade?s=09)
+- LinkedIn - [https://www.linkedin.com/in/chidubem-ndupu-b95b70244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app](https://www.linkedin.com/in/chidubem-ndupu-b95b70244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- Twitter - [https://x.com/chidubem_ndupu?t=MpXpYUDA2908gubd634Y6Q&s=09](https://x.com/chidubem_ndupu?t=MpXpYUDA2908gubd634Y6Q&s=09)
 
 3.  Project Manager
 
