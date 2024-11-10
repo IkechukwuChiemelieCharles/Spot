@@ -52,6 +52,9 @@ b {
 a:hover {
   color: var(--yellow);
 }
+/* a: {
+  color: var(--yellow);
+} */
 .sub a:hover {
   color: var(--white);
 }
