@@ -51,7 +51,689 @@ nav {
   justify-content: space-around;
   background-color: black;
   color: white;
-  height: 12vh;
+  height: 7rem;
   position: fixed;
   width: 100%;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.cover {
+  padding-top: 7rem;
+}
+
+.rounded-image img {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+}
+
+.round {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30rem;
+  margin-top: -10rem;
+}
+
+.person {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.tay {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.fa-circle {
+  color: green;
+  font-size: 1.6rem;
+}
+
+.follow {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+.nig {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+  margin-top: -2.5rem;
+}
+
+.bio {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+.hero {
+  background-color: black;
+  color: white;
+}
+
+.fa-arrow-right-long,
+.fa-pen {
+  color: rgb(221, 167, 4);
+}
+
+.below-hero {
+  background-color: black;
+}
+
+.border {
+  width: 80%;
+  margin: 0 auto;
+  border: 0.15rem solid rgb(221, 167, 4);
+  color: white;
+  border-radius: 0.8rem;
+}
+
+.file {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: rgb(221, 167, 4);
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.back {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 0.15rem solid rgb(221, 167, 4);
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.later {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 0.15rem solid rgb(221, 167, 4);
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.feed {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+  padding-top: 4rem;
+  width: 89%;
+  color: white;
+}
+
+.user {
+  display: block;
+}
+
+.pen {
+  font-size: 1.92rem;
+  font-weight: 700;
+  color: rgb(221, 167, 4);
+  margin-bottom: 2.5rem;
+}
+
+#penny {
+  font-size: 1.6rem;
+}
+
+.skill {
+  font-size: 1.92rem;
+  font-size: 400;
+  background-color: rgb(36, 33, 27);
+  border-radius: 0.8rem;
+  padding: 3.3rem 2.5rem;
+}
+
+.creative {
+  font-size: 1.92rem;
+  font-size: 400;
+  background-color: rgb(36, 33, 27);
+  border-radius: 0.8rem;
+  padding: 3.3rem 2.5rem;
+}
+
+.sill {
+  font-size: 1.92rem;
+  font-weight: 700;
+  color: rgb(221, 167, 4);
+  margin-bottom: 2.5rem;
+}
+
+.type {
+  border: 0.15rem solid rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 10rem;
+}
+
+.comm {
+  display: block;
+  border: 0.15rem solid rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  width: 36%;
+  margin-top: 2rem;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(24, 23, 20);
+  padding: 8rem 0;
+  border-bottom: 0.15rem solid rgb(221, 167, 4);
+}
+
+.rec {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(221, 167, 4);
+  margin: 5rem 0 5rem 3rem;
+}
+
+.img1 img,
+.img2 img,
+.img3 img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.img1,
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.img3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5rem 0;
+  padding-left: 1.5rem;
+}
+
+.jet a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(221, 167, 4);
+  padding: 1.25rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.view a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  border: 0.15rem solid rgb(221, 167, 4);
+  padding: 1.25rem 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 7rem 0;
+}
+
+#down {
+  color: white;
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 4rem;
+}
+
+.spot img {
+  width: 300px;
+}
+
+.spot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.below a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.below {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.lize {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.follow {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+#s-media {
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(221, 167, 4);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.stay {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.news {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.high {
+  display: block;
+}
+
+#email {
+  width: 27rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  background-color: black;
+  padding-left: 2rem;
+  border: 0.2rem solid rgb(221, 167, 4);
+}
+
+#mit {
+  width: 11rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgb(221, 167, 4);
+  color: white;
+  font-size: 1.6rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10rem;
+  margin-bottom: 8rem;
+}
+
+.home {
+  color: rgb(221, 167, 4);
+}
+
+.last-list1 ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 2rem 0;
+  margin-bottom: 2.4rem;
+}
+
+.last-list1 li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+.last-list2 {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+/* 1440px - Large Desktop */
+@media screen and (max-width: 1440px) {
+  #search {
+    width: 60rem;
+  }
+
+  .discover {
+    gap: 8rem;
+  }
+
+  .social {
+    gap: 8rem;
+  }
+}
+
+/* 1200px - Desktop */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  #search {
+    width: 50rem;
+  }
+
+  .discover {
+    gap: 6rem;
+  }
+
+  .menu {
+    width: 250px;
+  }
+
+  .img1 img,
+  .img2 img,
+  .img3 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    flex-wrap: wrap;
+  }
+
+  .social {
+    gap: 6rem;
+  }
+}
+
+/* 1024px - Small Desktop */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  .discover {
+    gap: 4rem;
+  }
+
+  .menu {
+    width: 220px;
+  }
+
+  .social {
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+}
+
+/* 992px - Large Tablet */
+@media screen and (max-width: 992px) {
+  .list {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .person {
+    display: none;
+  }
+
+  .feed {
+    width: 97%;
+  }
+
+  .round {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 3rem;
+  }
+
+  .rounded-image {
+    text-align: right;
+  }
+
+  .border {
+    width: 100%;
+    border: none;
+    color: white;
+  }
+
+  #search {
+    width: 40rem;
+  }
+
+  .discover {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .social {
+    gap: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* 768px - Tablet */
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 50rem;
+    background-image: url("Images/Hero\ Image\ mobile.png");
+  }
+
+  .search1 {
+    flex-direction: column;
+  }
+
+  #search {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .skill {
+    max-width: 30rem;
+  }
+
+  .creative {
+    max-width: 40rem;
+  }
+
+  .type3 {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+  }
+
+  .comm {
+    margin-top: -9rem;
+    width: 100%;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .social {
+    gap: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .last-list1 ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* 600px - Small Tablet */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 43.75%; /* 7px */
+  }
+
+  .jump {
+    font-size: 3.5rem;
+  }
+
+  .menu {
+    width: 90%;
+  }
+
+  #email {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  #mit {
+    width: 90%;
+  }
+}
+
+/* 480px - Large Mobile */
+@media screen and (max-width: 480px) {
+  nav img {
+    width: 60px;
+  }
+
+  .nav-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 1.5rem;
+  }
+
+  .later {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .creative {
+    max-width: 50rem;
+  }
+
+  .skill {
+    max-width: 35rem;
+  }
+
+  #bells {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  .jump {
+    font-size: 3rem;
+  }
+
+  .spot img {
+    width: 90%;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .last-list1 li {
+    margin-top: 1.6rem;
+  }
+}
+
+/* 320px - Small Mobile */
+@media screen and (max-width: 320px) {
+  nav {
+    height: 6rem;
+  }
+
+  nav img {
+    width: 50px;
+  }
+
+  .nav-icons img {
+    width: 20px;
+    height: 20px;
+    margin: 1rem;
+  }
+
+  .jet a,
+  .view a {
+    padding: 1.25rem 1.5rem;
+  }
+
+  #bells {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+
+  .jump {
+    font-size: 2.5rem;
+  }
+
+  .fuel {
+    font-size: 1.6rem;
+  }
 }

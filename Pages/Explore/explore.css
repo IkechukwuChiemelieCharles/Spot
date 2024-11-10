@@ -4,13 +4,25 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 
-html {
-  font-size: 62.5%;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 7rem;
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 nav img {
@@ -38,26 +50,24 @@ li a {
   margin: 2.5rem;
 }
 
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
 .nav-icons img {
   width: 32px;
   height: 32px;
   margin: 2.5rem;
 }
 
-.nav-icons {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-  height: 12vh;
-  position: fixed;
+.hero {
+  background-image: url("Images/Hero\ Image\ desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  min-height: 70rem;
 }
 
 .car {
@@ -95,6 +105,8 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 2rem;
 }
 
 .share {
@@ -120,7 +132,6 @@ nav {
 }
 
 #maad {
-  /* text-decoration: none; */
   font-size: 1.5rem;
   color: white;
   background-color: rgb(221, 167, 4);
@@ -129,21 +140,14 @@ nav {
   border: none;
 }
 
-.hero {
-  background-image: url("Images/Hero\ Image\ desktop.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 70rem;
-}
-
 .discover {
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .discover a {
@@ -164,29 +168,45 @@ nav {
 }
 
 .menu {
-  width: 290px;
+  width: 100%;
+  max-width: 29rem;
 }
 
-.small-card-container {
+.container1,
+.container2,
+.container3,
+.container4,
+.container5 {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8.5rem;
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
 }
 
-.desi {
-  /* font-size: 1.6rem;
-  margin-top: 5rem; */
-  /* z-index: 1; */
+.container1 {
+  padding-top: 10rem;
+}
+
+.container5 {
+  padding-bottom: 10rem;
+}
+
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img,
+.container5 img {
+  width: 100%;
+  max-width: 29rem;
+  height: auto;
 }
 
 footer {
   background-color: rgb(27, 27, 27);
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 4rem;
-}
-
-.spot img {
-  width: 300px;
+  padding: 4rem 2rem;
 }
 
 .spot {
@@ -195,11 +215,9 @@ footer {
   align-items: center;
 }
 
-.below a {
-  text-decoration: none;
-  font-size: 1.6rem;
-  margin: 2.5rem;
-  color: rgba(255, 255, 255, 0.6);
+.spot img {
+  width: 100%;
+  max-width: 30rem;
 }
 
 .below {
@@ -207,16 +225,35 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 8rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.lize {
+.below a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 8rem;
+  flex-wrap: wrap;
+}
+
+.lize,
+.stay {
   font-size: 2.3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: white;
 }
 
-.follow {
+.follow,
+.news {
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
@@ -231,25 +268,13 @@ footer {
   margin-right: 1rem;
 }
 
-.stay {
-  font-size: 2.3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: white;
-}
-
-.news {
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-bottom: 2.5rem;
-}
-
 .tips {
   display: block;
 }
 
 #email {
-  width: 27rem;
+  width: 100%;
+  max-width: 27rem;
   height: 5rem;
   border-radius: 0.8rem;
   font-size: 1.3rem;
@@ -268,9 +293,168 @@ footer {
   font-size: 1.6rem;
 }
 
-.social {
+.last-list1 ul {
+  list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 10rem;
+  justify-content: center;
+  background-color: black;
+  padding: 2rem 0;
+  margin-bottom: 2.4rem;
+}
+. .last-list1 li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+.last-list2 {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .discover {
+    gap: 6rem;
+  }
+
+  .social {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+
+  #search {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 50rem;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .jump {
+    font-size: 3.5rem;
+  }
+
+  .graph,
+  .ui {
+    display: none;
+  }
+
+  .social {
+    gap: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #search {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 50rem;
+  }
+
+  .discover {
+    gap: 3rem;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .social {
+    gap: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 51%;
+  }
+  .nav-icons img {
+    margin: 1rem;
+  }
+
+  #search {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 27rem;
+  }
+
+  #maad {
+    padding: 1.5rem 0.5rem;
+  }
+
+  #bells {
+    margin: 1rem;
+  }
+
+  li a {
+    margin: 1rem;
+  }
+
+  .jump {
+    font-size: 3rem;
+  }
+
+  .below {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  #mit {
+    width: 27rem;
+    height: 5rem;
+    margin-top: 1.5rem;
+  }
+
+  .last-list1 ul {
+    flex-direction: column;
+  }
+
+  .last-list1 li {
+    margin-top: 1.6rem;
+  }
 }
