@@ -11,6 +11,7 @@
   --black: #0c0c0c;
   --border: #e0e0e0;
   --placeHolder: #676767;
+  --hover: #c79604;
 }
 html {
   /* font-size: 62.5%; */
@@ -33,6 +34,13 @@ body {
   background-color: var(--black);
   font-size: 62.5%;
   font-family: "Open Sans";
+}
+
+.btn {
+  border-radius: 0.5rem;
+}
+.submit:hover {
+  background-color: var(--hover);
 }
 
 a {

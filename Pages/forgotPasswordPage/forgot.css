@@ -12,6 +12,7 @@
   --border: #e0e0e0;
   --placeHolder: #676767;
   --lightYello: #ffe9a7;
+  --hover: #c79604;
 }
 html {
   font-size: 62.5%;
@@ -39,6 +40,10 @@ body {
 a {
   color: #dda704;
   text-decoration: none;
+}
+.btn a:hover {
+  background-color: var(--hover);
+  color: var(--white);
 }
 main {
   display: flex;

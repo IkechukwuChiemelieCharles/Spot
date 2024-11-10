@@ -16,6 +16,7 @@
   --greyFont: #d3d3d3;
   --borderYello: #ffe9a7;
   --lightGrey: #d3d3d3;
+  --hover: #c79604;
 }
 html {
   font-size: 62.5%;
@@ -42,6 +43,46 @@ b {
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+
+.right button:hover {
+  background-color: var(--hover);
+}
+button {
+  cursor: pointer;
+}
+.text a:hover {
+  background-color: var(--hover);
+}
+.see:hover {
+  color: var(--white);
+}
+/* demacation/////// */
+.view:hover {
+  color: white;
+}
+.proj {
+  color: var(--yellow);
+}
+.btn a:hover {
+  background-color: var(--hover);
+}
+.sub:hover {
+  color: white;
+  background-color: var(--hover);
+}
+.sub a:hover {
+  color: white;
+}
+.icons a:hover {
+  background-color: var(--black);
+}
+.icons span {
+  cursor: pointer;
 }
 nav {
   display: flex;

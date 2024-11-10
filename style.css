@@ -16,6 +16,7 @@
   --greyFont: #d3d3d3;
   --borderYello: #ffe9a7;
   --lightGrey: #d3d3d3;
+  --hover: #c79604;
 }
 html {
   font-size: 62.5%;
@@ -40,8 +41,45 @@ header {
 b {
   color: var(--yellow);
 }
+.home {
+  color: var(--yellow);
+}
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+
+.right button:hover {
+  background-color: var(--hover);
+}
+button {
+  cursor: pointer;
+}
+.text a:hover {
+  background-color: var(--hover);
+}
+
+/* demacation/////// */
+
+.btn a:hover {
+  background-color: var(--hover);
+  color: var(--white);
+}
+.sub:hover {
+  color: white;
+  background-color: var(--hover);
+}
+.sub a:hover {
+  color: white;
+}
+.icons a:hover {
+  background-color: var(--black);
+}
+.icons span {
+  cursor: pointer;
 }
 nav {
   display: flex;

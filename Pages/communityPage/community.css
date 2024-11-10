@@ -16,6 +16,7 @@
   --greyFont: #d3d3d3;
   --borderYello: #ffe9a7;
   --lightGrey: #d3d3d3;
+  --hover: #c79604;
 }
 html {
   font-size: 62.5%;
@@ -46,6 +47,12 @@ header {
   top: 0;
 }
 
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--hover);
+}
 b {
   color: var(--yellow);
 }
@@ -60,6 +67,32 @@ a:hover {
 }
 a {
   text-decoration: none;
+}
+.Communities {
+  color: var(--yellow);
+}
+
+.btn a:hover {
+  background-color: var(--hover);
+}
+.sub {
+  border: none;
+}
+.sub:hover {
+  color: white;
+  background-color: var(--hover);
+}
+.sub a:hover {
+  color: white;
+}
+.icons a:hover {
+  background-color: var(--black);
+}
+.icons span {
+  cursor: pointer;
+}
+.load {
+  border: none;
 }
 nav {
   display: flex;
