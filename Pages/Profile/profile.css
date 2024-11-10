@@ -416,7 +416,6 @@ footer {
   padding: 2rem 0;
 }
 
-/* 1440px - Large Desktop */
 @media screen and (max-width: 1440px) {
   #search {
     width: 60rem;
@@ -431,10 +430,9 @@ footer {
   }
 }
 
-/* 1200px - Desktop */
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 56.25%; /* 9px */
+    font-size: 56.25%;
   }
 
   #search {
@@ -468,10 +466,9 @@ footer {
   }
 }
 
-/* 1024px - Small Desktop */
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 50%; /* 8px */
+    font-size: 50%;
   }
 
   .discover {
@@ -488,7 +485,6 @@ footer {
   }
 }
 
-/* 992px - Large Tablet */
 @media screen and (max-width: 992px) {
   .list {
     display: none;
@@ -560,7 +556,6 @@ footer {
   }
 }
 
-/* 768px - Tablet */
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 50rem;
@@ -622,10 +617,9 @@ footer {
   }
 }
 
-/* 600px - Small Tablet */
 @media screen and (max-width: 600px) {
   html {
-    font-size: 43.75%; /* 7px */
+    font-size: 43.75%;
   }
 
   .jump {
@@ -646,7 +640,6 @@ footer {
   }
 }
 
-/* 480px - Large Mobile */
 @media screen and (max-width: 480px) {
   nav img {
     width: 60px;
@@ -703,7 +696,6 @@ footer {
   }
 }
 
-/* 320px - Small Mobile */
 @media screen and (max-width: 320px) {
   nav {
     height: 6rem;
