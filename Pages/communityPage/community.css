@@ -623,3 +623,20 @@ footer .fourthFooter {
   color: var(--grey);
   font-size: 1.6rem;
 }
+
+footer .secondFooter .icons span:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+}
+
+.yellow:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}

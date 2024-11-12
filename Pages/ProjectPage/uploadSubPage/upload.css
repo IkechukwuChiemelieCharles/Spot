@@ -198,3 +198,17 @@ footer .publish {
   background-color: var(--yellow);
   color: var(--white);
 }
+
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 0;
+}

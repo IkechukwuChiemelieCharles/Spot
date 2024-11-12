@@ -47,10 +47,8 @@ b {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: none;
-  color: var(--hover);
-}
+
+/*
 
 .right button:hover {
   background-color: var(--hover);
@@ -60,10 +58,10 @@ button {
 }
 .text a:hover {
   background-color: var(--hover);
-}
+} */
 
 /* demacation/////// */
-
+/* 
 .btn a:hover {
   background-color: var(--hover);
   color: var(--white);
@@ -80,7 +78,8 @@ button {
 }
 .icons span {
   cursor: pointer;
-}
+} */
+
 nav {
   display: flex;
   width: 100%;
@@ -676,4 +675,25 @@ footer .fourthFooter {
   background-color: var(--black);
   color: var(--grey);
   font-size: 1.6rem;
+}
+
+footer .secondFooter .icons span:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
 }

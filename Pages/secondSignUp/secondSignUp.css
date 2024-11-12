@@ -25,16 +25,13 @@ body {
   background-color: var(--black);
   font-family: "Open Sans";
 }
-.btn:hover {
-  background-color: var(--hover);
-}
+
 a {
   color: #dda704;
   text-decoration: none;
   /* font-size: 1rem; */
 }
-.submit a:hover {
-}
+
 main {
   display: flex;
   flex-direction: column;
@@ -205,6 +202,12 @@ input::placeholder {
 
 .sec {
   display: none;
+}
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 640px) {

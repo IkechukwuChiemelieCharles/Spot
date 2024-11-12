@@ -282,12 +282,16 @@ footer .secondFooterright {
 footer form input {
   width: 28rem;
   height: 5.6rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 footer form button {
   width: 14rem;
   height: 5.6rem;
   gap: 1rem;
-  margin-left: -5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  /* margin-left: -5rem; */
 }
 footer .thirdFooter {
   height: 6rem;

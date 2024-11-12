@@ -97,6 +97,11 @@ h1 {
   align-items: center;
   gap: 1rem;
 }
+
+.yellow:hover {
+  color: var(--yellow);
+}
+
 @media screen and (min-width: 640px) {
   body {
     /* background-color: red; */

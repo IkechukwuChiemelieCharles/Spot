@@ -49,41 +49,6 @@ a:hover {
   color: var(--hover);
 }
 
-.right button:hover {
-  background-color: var(--hover);
-}
-button {
-  cursor: pointer;
-}
-.text a:hover {
-  background-color: var(--hover);
-}
-.see:hover {
-  color: var(--white);
-}
-/* demacation/////// */
-.view:hover {
-  color: white;
-}
-.proj {
-  color: var(--yellow);
-}
-.btn a:hover {
-  background-color: var(--hover);
-}
-.sub:hover {
-  color: white;
-  background-color: var(--hover);
-}
-.sub a:hover {
-  color: white;
-}
-.icons a:hover {
-  background-color: var(--black);
-}
-.icons span {
-  cursor: pointer;
-}
 nav {
   display: flex;
   width: 100%;
@@ -559,4 +524,27 @@ footer .fourthFooter {
   background-color: var(--black);
   color: var(--grey);
   font-size: 1.6rem;
+}
+
+footer .secondFooter .icons span:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 0;
 }
