@@ -30,7 +30,7 @@ The name implies a dedicated space where designers can feel comfortable both giv
 
 ## Contributors
 
-1. Developers
+1. Front End Developers
 
 Honesty Nwaeke
 
