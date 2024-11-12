@@ -106,7 +106,6 @@ nav {
   top: 0;
   left: 0;
   z-index: 10;
-  border: 1px solid red;
 }
 nav i {
   color: var(--white);
@@ -121,7 +120,6 @@ nav .bellNsearch {
   justify-content: space-around;
   align-items: center;
   width: 14.4rem;
-  border: 1px solid blue;
 }
 nav .bellNsearch {
   width: 14.4rem;
