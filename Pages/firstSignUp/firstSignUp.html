@@ -12,14 +12,19 @@
     />
     <link
       rel="stylesheet"
-      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+      href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <title>Spot First Login Page</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/Spot_Secondary_Logo-removebg-preview 1.png"
+    />
+    <title>Spot First Sign Up Page</title>
   </head>
   <body>
     <main class="container">
       <div class="overlay">
-        <form action="">
+        <form action="../secondSignUp/secondSignUp.html">
           <div class="writeUp">
             <p class="step">Step 1 of 2</p>
             <h1>Start Your <b>Design</b> Journey!</h1>
@@ -30,16 +35,44 @@
           </div>
           <div class="topForm">
             <div class="email">
-              <label class="label1" for="">Enter Your Email Address</label>
-              <input placeholder="Email" type="email" required />
+              <label class="label1" for="email" id="label1"
+                >Enter Your Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+              />
             </div>
             <div class="password">
-              <label class="label2" for="">Enter Your Password</label>
-              <input placeholder="Password" type="password" required />
+              <label class="label2" for="password" id="label2"
+                >Enter Your Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Password"
+              />
             </div>
           </div>
 
-          <a class="btn" href="../secondSignUp/secondSignUp.html">Continue</a>
+          <!-- <a
+            type="submit"
+            id="submit"
+            class="btn"
+            href="../secondSignUp/secondSignUp.html"
+          >
+            Continue</a
+          > -->
+          <a class="btn" href="../secondSignUp/secondSignUp.html">
+            <button class="submit" type="submit" id="submit">
+              Continue
+            </button></a
+          >
           <p class="already">
             Already have an account? <a href="../Login/login.html"> Sign In</a>
           </p>

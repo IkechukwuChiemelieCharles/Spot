@@ -109,6 +109,7 @@ main h1 {
   border: 1px solid var(--grey);
   padding-left: 1rem;
   border-radius: 0.6rem;
+  color: var(--white);
 }
 .right .category {
   position: relative;
