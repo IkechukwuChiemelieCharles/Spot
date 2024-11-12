@@ -17,7 +17,7 @@ The name implies a dedicated space where designers can feel comfortable both giv
 
 - Solution URL: [https://github.com/IkechukwuChiemelieCharles/Spot.git](https://github.com/IkechukwuChiemelieCharles/Spot.git)
 
-- Live Site URL: [https://ikechukwuchiemeliecharles.github.io/Spot/](https://ikechukwuchiemeliecharles.github.io/Spot/)
+- Live Site URL: [https://spot-ndt2.vercel.app/](https://spot-ndt2.vercel.app/)
 
 ## My process
 
