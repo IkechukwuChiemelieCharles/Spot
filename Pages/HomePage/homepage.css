@@ -115,7 +115,9 @@ nav .bellNsearch {
   /* border: 1px solid red; */
 }
 nav .bellNsearch {
-  width: 18vw;
+  width: 22vw;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .ham {
@@ -137,7 +139,7 @@ nav .bellNsearch {
 }
 
 .TopRightIcon {
-  display: none;
+  /* display: nne; */
 }
 
 .writeUp {

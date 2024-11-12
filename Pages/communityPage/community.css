@@ -122,7 +122,9 @@ nav .bellNsearch {
   width: 14.4rem;
 }
 nav .bellNsearch {
-  width: 18vw;
+  width: 22vw;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .links {
@@ -174,7 +176,7 @@ nav .bellNsearch {
 }
 
 .TopRightIcon {
-  display: none;
+  /* display: none; */
 }
 
 .writeUp {
@@ -250,6 +252,7 @@ main {
   align-items: center;
   width: 35.9rem;
   height: 4.6rem;
+  border: 1px;
 
   /* gap: 4rem; */
 }
@@ -262,9 +265,17 @@ main {
   align-items: center;
   text-wrap: nowrap;
   padding: 2rem;
+  border-radius: 0.4rem;
 }
 .topLinks a:hover {
   background-color: var(--yellow);
+  color: var(--white);
+}
+
+.whats {
+  background-color: var(--yellow);
+}
+.whats a {
   color: var(--white);
 }
 
