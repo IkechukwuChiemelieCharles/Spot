@@ -25,6 +25,7 @@ body {
   background-color: var(--black);
   font-family: "Open Sans";
 }
+
 header {
   background-image: url(./img/1729774943213.png);
   background-position: left;
@@ -55,7 +56,102 @@ a:hover {
   color: var(--hover);
 }
 
-/* demacation/////// */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: var(--black);
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  /* jha??? */
+
+  animation-name: open;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  0% {
+    width: 0;
+  }
+
+  90% {
+    width: 110vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+/* @keyframes closeMenu {
+  0% {
+    width: 100vw;
+  }
+
+  90% {
+    width: 50vw;
+  }
+  100% {
+    width: 0;
+  }
+} */
+/* .mobileMenu.open {
+  animation-name: openMenu;
+  animation-duration: 1s;
+}
+
+.mobileMenu.closing {
+  animation-name: closeMenu;
+  animation-duration: 1s;
+} */
+.mobileMenu i {
+  color: var(--white);
+  font-size: 4rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.mobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+}
+.mobileMenu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--grey);
+  width: 100%;
+  height: 3rem;
+  /* border: 1px solid green; */
+  padding-bottom: 2rem;
+  list-style-type: none;
+}
+.mobileMenu li:hover {
+  /* background-color: red; */
+  height: 5rem;
+  border-bottom: 0.4rem solid var(--yellow);
+  text-align: center;
+}
+.mobileMenu ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
 
 nav {
   display: flex;
@@ -94,6 +190,7 @@ nav .bellNsearch {
 
 .ham {
   font-size: 3.2rem;
+  cursor: pointer;
 }
 .logo {
   width: 5.2rem;

@@ -279,14 +279,12 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
-  body {
-  }
   form {
     width: 54.2rem;
     height: 64rem;
@@ -344,15 +342,12 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   body {
   }
-}
+} */
 
 @media screen and (min-width: 1536px) {
-  body {
-  }
-
   .fName > input,
   .lName > input,
   .country > input {

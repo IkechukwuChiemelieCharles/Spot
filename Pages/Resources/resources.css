@@ -379,6 +379,28 @@ footer {
   padding: 2rem 0;
 }
 
+#mit:hover {
+  background: none;
+  border: 0.2rem solid rgb(221, 167, 4);
+  cursor: pointer;
+}
+.yellow:hover {
+  background: none;
+  border: 0.2rem solid rgb(221, 167, 4);
+  cursor: pointer;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+#s-media:hover {
+  background: none;
+  border: 0.2rem solid rgb(221, 167, 4);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 56.25%;
