@@ -29,15 +29,18 @@
   <body>
     <header>
       <div class="mobileMenu hidden">
-        <ul>
+        <div class="innerCont">
           <i class="fa fa-times close" aria-hidden="true"></i>
-          <li><a class="home" href="#">Home</a></li>
-          <li><a href="../Explore/explore.html">Explore</a></li>
-          <li><a href="../ProjectPage/project.html">My Projects</a></li>
-          <li><a href="../communityPage/community.html">Communities</a></li>
-          <li><a href="../Resources/resources.html">Resources Page</a></li>
-        </ul>
+          <ul>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
       </div>
+
       <nav>
         <div class="hamNlogo">
           <div class="ham">
@@ -837,15 +840,16 @@
             Sign up for our newsletter to get the latest updates, design tips,
             and community highlights!
           </p>
-          <form action="">
+          <form action="./subSuccess/success.html">
             <input
               placeholder="Enter you Email Address"
               type="email"
               name=""
               id=""
+              required
             />
             <button class="sub yellow">
-              <a href="#">Subscribe </a>
+              Subscribe
 
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
             </button>

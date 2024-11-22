@@ -19,6 +19,11 @@ main h1 {
   width: 40rem;
   align-self: center;
 }
+
+.left img {
+  width: 20rem;
+  height: 18rem;
+}
 .right div {
   margin: 4rem 0;
   width: 48rem;
