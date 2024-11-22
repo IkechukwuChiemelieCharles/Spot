@@ -62,3 +62,7 @@ nav a:active {
 .searchInp {
   align-self: flex-end;
 }
+
+.mobileMenu {
+  display: none;
+}
