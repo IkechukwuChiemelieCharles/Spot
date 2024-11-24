@@ -77,9 +77,6 @@ for (const item of dropDownBtn) {
   });
 }
 
-// const newCarret = document.createElement("div");
-// console.log(newCarret);
-
 for (const items of options) {
   items.addEventListener("click", () => {
     for (const item of dropDownBtn) {
@@ -90,14 +87,14 @@ for (const items of options) {
   });
 }
 
-//post Popup
-// inputClick.addEventListener("click", function () {
-//   post.classList.remove("hidden");
-//   postOverLay.classList.remove("hidden");
-// });
-// function closePost() {
-//   post.classList.add("hidden");
-//   postOverLay.classList.add("hidden");
-// }
-// xBtn.addEventListener("click", closePost);
-// postOverLay.addEventListener("click", closePost);
+// post Popup
+inputClick.addEventListener("click", function () {
+  post.classList.remove("hidden");
+  postOverLay.classList.remove("hidden");
+});
+function closePost() {
+  post.classList.add("hidden");
+  postOverLay.classList.add("hidden");
+}
+xBtn.addEventListener("click", closePost);
+postOverLay.addEventListener("click", closePost);
