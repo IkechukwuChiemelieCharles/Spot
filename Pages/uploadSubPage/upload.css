@@ -253,6 +253,7 @@ footer .publish {
   background-color: var(--black);
   color: var(--placeHolder);
   border: 1px solid var(--placeHolder);
+  border-radius: 0.6rem;
 }
 .options {
   width: 100%;

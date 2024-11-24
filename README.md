@@ -27,6 +27,7 @@ The name implies a dedicated space where designers can feel comfortable both giv
 - CSS
 - Flexbox
 - Mobile-first workflow
+- JavaScript
 
 ## Contributors
 
