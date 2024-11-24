@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./upload640.css" media="(min-width:640px)" />
     <link rel="stylesheet" href="./upload1280.css" media="(min-width:1280px)" />
 
+    <link
+      rel="stylesheet"
+      href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/9043769453.js"
       crossorigin="anonymous"
@@ -46,7 +50,7 @@
             </div>
           </div>
           <div class="right">
-            <div>
+            <div class="div">
               <label for="">Project Name</label>
               <input
                 placeholder="Enter the project name"
@@ -55,7 +59,7 @@
                 id=""
               />
             </div>
-            <div>
+            <div class="div">
               <label for="">Project Description</label>
               <textarea
                 name=""
@@ -75,7 +79,12 @@
               <div class="customSelect">
                 <button class="selectButton">
                   Select an option
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <div class="arrDown">
+                    <i class="fa fa-caret-down" id="" aria-hidden="true"></i>
+                  </div>
+                  <div class="arrUp hide">
+                    <i class="fa fa-caret-up" id="arrUp" aria-hidden="true"></i>
+                  </div>
                 </button>
                 <ul class="options hide">
                   <li class="option">Animations</li>
@@ -91,7 +100,7 @@
                 id=""
               /> -->
             </div>
-            <div>
+            <div class="div">
               <label for=""> Project Tags</label>
               <input
                 placeholder="Add tags to help people discover your project"

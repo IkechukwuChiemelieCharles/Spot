@@ -6,29 +6,25 @@ const menu = document.querySelector(".mobileMenu");
 
 //like icon animation
 const likeBtns = document.getElementsByClassName("liked");
-
 const commentBtns = document.querySelectorAll(".commented");
 const shareBtns = document.querySelectorAll(".shared");
 
 //drop down menu
 const dropDownBtn = document.querySelectorAll(".selectButton");
-
 const dropDownMenu = document.querySelector(".options");
-
 const options = document.querySelectorAll(".option");
+const carretUp = document.querySelectorAll(".arrUp");
+const carretdown = document.querySelectorAll(".arrDown");
+const imgDown = document.querySelectorAll(".imgDown");
+console.log(carretUp, carretdown);
 
 //post Popup
-// const input = document.querySelector(".input");
 const inputClick = document.getElementById("inputClick");
-console.log(inputClick);
-
 const xBtn = document.querySelector(".xBtn");
-console.log(xBtn);
-
 const post = document.querySelector(".post");
+const postOverLay = document.querySelector(".postOverLay");
 
 //open harmburger
-
 function openMenu() {
   menu.classList.toggle("hidden");
 }
@@ -68,21 +64,40 @@ for (const items of shareBtns) {
 for (const item of dropDownBtn) {
   item.addEventListener("click", function () {
     dropDownMenu.classList.toggle("hide");
+
+    for (const item of carretdown) {
+      item.classList.toggle("hide");
+      console.log("clicked");
+    }
+
+    for (const item of carretUp) {
+      item.classList.toggle("hide");
+      console.log("clicked");
+    }
   });
 }
+
+// const newCarret = document.createElement("div");
+// console.log(newCarret);
 
 for (const items of options) {
   items.addEventListener("click", () => {
     for (const item of dropDownBtn) {
       item.textContent = items.textContent;
     }
+
     dropDownMenu.classList.toggle("hide");
   });
 }
 
 //post Popup
-
-inputClick.addEventListener("click", () => post.classList.remove("hidden"));
-console.log(inputClick);
-
-xBtn.addEventListener("click", () => post.classList.add("hidden"));
+// inputClick.addEventListener("click", function () {
+//   post.classList.remove("hidden");
+//   postOverLay.classList.remove("hidden");
+// });
+// function closePost() {
+//   post.classList.add("hidden");
+//   postOverLay.classList.add("hidden");
+// }
+// xBtn.addEventListener("click", closePost);
+// postOverLay.addEventListener("click", closePost);

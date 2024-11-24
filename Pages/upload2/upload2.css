@@ -142,7 +142,7 @@ main h1 {
   align-items: start;
   /* margin-top: 4rem; */
 }
-.right div {
+.right .div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,9 +309,6 @@ footer .publish {
   animation-fill-mode: forwards;
 }
 
-.hide {
-  display: none;
-}
 .option {
   list-style: none;
   width: 100%;
@@ -335,4 +332,7 @@ footer .publish {
   100% {
     height: 19.2rem;
   }
+}
+.hide {
+  display: none;
 }

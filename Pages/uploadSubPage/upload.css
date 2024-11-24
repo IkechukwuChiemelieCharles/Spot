@@ -268,9 +268,6 @@ footer .publish {
   animation-fill-mode: forwards;
 }
 
-.hide {
-  display: none;
-}
 .option {
   list-style: none;
   width: 100%;
@@ -294,4 +291,7 @@ footer .publish {
   100% {
     height: 19.2rem;
   }
+}
+.hide {
+  display: none;
 }
