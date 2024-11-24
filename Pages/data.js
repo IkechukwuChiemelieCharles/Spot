@@ -13,15 +13,18 @@ const shareBtns = document.querySelectorAll(".shared");
 //drop down menu
 const dropDownBtn = document.querySelectorAll(".selectButton");
 
-console.log(dropDownBtn);
-
 const dropDownMenu = document.querySelector(".options");
 
 const options = document.querySelectorAll(".option");
 
 //post Popup
-const input = document.querySelector(".input");
+// const input = document.querySelector(".input");
+const inputClick = document.getElementById("inputClick");
+console.log(inputClick);
+
 const xBtn = document.querySelector(".xBtn");
+console.log(xBtn);
+
 const post = document.querySelector(".post");
 
 //open harmburger
@@ -70,14 +73,16 @@ for (const item of dropDownBtn) {
 
 for (const items of options) {
   items.addEventListener("click", () => {
-    dropDownBtn.textContent = items.textContent;
+    for (const item of dropDownBtn) {
+      item.textContent = items.textContent;
+    }
     dropDownMenu.classList.toggle("hide");
-    dropdown.classList.toggle("open");
   });
 }
 
 //post Popup
 
-input.addEventListener("click", () => post.classList.remove("hidden"));
+inputClick.addEventListener("click", () => post.classList.remove("hidden"));
+console.log(inputClick);
 
 xBtn.addEventListener("click", () => post.classList.add("hidden"));
