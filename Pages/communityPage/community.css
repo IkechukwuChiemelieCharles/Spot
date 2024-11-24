@@ -24,6 +24,105 @@ html {
 body {
   background-color: var(--black);
   font-family: "Open Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+.post {
+  display: flex;
+  width: 33rem;
+  height: 30.9rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--backGroundGray);
+  position: absolute;
+  top: 30rem;
+  border-radius: 0.8rem;
+  padding-bottom: 1rem;
+  z-index: 30;
+}
+.mainTopCont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+.imgDiv {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.mainTopCont textarea {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--backGroundGray);
+  border: none;
+}
+
+.imgDiv span h2 {
+  color: var(--yellow);
+  font-size: 1.6rem;
+}
+.post i {
+  color: var(--white);
+}
+.imgDiv span {
+  font-size: 1.333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.xBtn {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+.imgDiv img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.icons2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.7rem;
+  border-bottom: 1px solid var(--grey);
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+.secondDiv button {
+  width: 8.4rem;
+  height: 4rem;
+  align-self: flex-end;
+  background-color: var(--yellow);
+  border-radius: 0.8rem;
+  color: var(--white);
+  border: none;
+  margin-right: 2rem;
+  cursor: pointer;
 }
 header {
   background-image: url(./img/Right\ Section\ Image.png);
@@ -94,7 +193,7 @@ header {
   justify-content: center;
   align-items: center;
   /* gap: 2rem; */
-  width: 35.5rem;
+  width: 100%;
   height: 24rem;
 }
 .mobileMenu ul li {
@@ -127,7 +226,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 35.5rem;
+  width: 80%;
+
   height: 28.8rem;
 }
 .hidden {

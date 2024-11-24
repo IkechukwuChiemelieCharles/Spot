@@ -21,6 +21,11 @@ nav ul {
   gap: 4.4rem;
 }
 
+.post {
+  width: 98rem;
+  height: 45.9rem;
+}
+
 .posts .top {
   justify-content: start;
   width: 79.6rem;

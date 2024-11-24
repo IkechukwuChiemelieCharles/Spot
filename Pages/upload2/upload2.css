@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+:root {
+  --white: #fdfdfd;
+  --yellow: #dda704;
+  --black: #0c0c0c;
+  --border: #e0e0e0;
+  --placeHolder: #676767;
+  --grey: #8b8b8b;
+  --backGroundGray: #434343;
+  --veryDarkGrey: #1b1b1b;
+  --greyFont: #d3d3d3;
+  --borderYello: #ffe9a7;
+  --lightGrey: #d3d3d3;
+  --lightYellow: #ffe9a7;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--black);
+  font-family: "Open Sans";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  padding: 12rem 1.6rem 18rem 1.6rem;
+  /* margin: 12rem 2.4rem 20rem 2.4rem; */
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.333rem;
+  gap: 1rem;
+  color: var(--grey);
+  /* align-self: start; */
+  width: 34.3rem;
+}
+.breadCrumbs b {
+  font-size: 2.333rem;
+  color: var(--white);
+}
+.breadCrumbs span {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.breadCrumbs a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  /* height: 115rem; */
+}
+main h1 {
+  font-size: 2.304rem;
+  margin-top: 6rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 1.6rem;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.left {
+  width: 34.3rem;
+  height: 40rem;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  background-image: url(../ProjectPage/img/Frame\ 1000001463.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.left .texts {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 7.7rem;
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 0 1.4rem;
+}
+.left .texts h4 {
+  font-size: 1.6rem;
+  align-self: flex-start;
+}
+.left .texts p {
+  font-size: 1.333rem;
+  align-self: flex-start;
+}
+.left .texts .icons {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 1.6rem;
+}
+.left .texts .icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* margin-top: 4rem; */
+}
+.right div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.6rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.right div label {
+  font-size: 1.6rem;
+}
+.right div input {
+  font-size: 1.333rem;
+  width: 34.3rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid var(--grey);
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  color: var(--white);
+}
+.right div textarea {
+  font-size: 1.333rem;
+  width: 34.3rem;
+  height: 18rem;
+  background: none;
+  border: 1px solid var(--grey);
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  color: var(--white);
+}
+
+/* .right .category {
+  position: relative;
+}
+
+.right .category i {
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 3.5rem;
+} */
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 34.3rem;
+  height: 31rem;
+  text-align: center;
+  /* border: 4px dotted var(--grey); */
+  background-color: rgba(0, 0, 0, 0.788);
+
+  border-radius: 1rem;
+  background-image: url(../ProjectPage/img/Frame\ 1000001463.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  background-color: #0c0c0cc0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 34.3rem;
+  height: 19.2rem;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+footer .cancel {
+  background-color: var(--black);
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+footer .btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+footer .save {
+  background-color: var(--lightYellow);
+  color: var(--black);
+}
+footer .publish {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 0;
+}
+
+.right .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.6rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.selectButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--placeHolder);
+  border: 1px solid var(--placeHolder);
+}
+.options {
+  width: 100%;
+  /* height: 19.2rem; */
+  height: 0;
+  background-color: var(--grey);
+
+  animation-name: open;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hide {
+  display: none;
+}
+.option {
+  list-style: none;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.option:hover {
+  background-color: var(--yellow);
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 19.2rem;
+  }
+}

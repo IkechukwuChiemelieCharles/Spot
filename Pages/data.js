@@ -11,10 +11,18 @@ const commentBtns = document.querySelectorAll(".commented");
 const shareBtns = document.querySelectorAll(".shared");
 
 //drop down menu
-const dropDownBtn = document.querySelector(".selectButton");
+const dropDownBtn = document.querySelectorAll(".selectButton");
+
+console.log(dropDownBtn);
+
 const dropDownMenu = document.querySelector(".options");
 
 const options = document.querySelectorAll(".option");
+
+//post Popup
+const input = document.querySelector(".input");
+const xBtn = document.querySelector(".xBtn");
+const post = document.querySelector(".post");
 
 //open harmburger
 
@@ -53,30 +61,23 @@ for (const items of shareBtns) {
 }
 
 //dropDown Menu
-dropDownBtn.addEventListener("click", function () {
-  dropDownMenu.classList.toggle("hide");
-});
+
+for (const item of dropDownBtn) {
+  item.addEventListener("click", function () {
+    dropDownMenu.classList.toggle("hide");
+  });
+}
 
 for (const items of options) {
-  items.addEventListener("click", function () {
+  items.addEventListener("click", () => {
     dropDownBtn.textContent = items.textContent;
     dropDownMenu.classList.toggle("hide");
     dropdown.classList.toggle("open");
   });
 }
 
-// hamburger.addEventListener("click", function () {
-//   if (!menu.classList.contains("open")) {
-//     menu.classList.remove("closing");
-//     menu.classList.add("open");
-//     menu.classList.toggle("hidden");
-//   }
-// });
+//post Popup
 
-// closeBtn.addEventListener("click", function () {
-//   if (menu.classList.contains("open")) {
-//     menu.classList.remove("open");
-//     menu.classList.add("closing");
-//     // menu.classList.toggle("hidden");
-//   }
-// });
+input.addEventListener("click", () => post.classList.remove("hidden"));
+
+xBtn.addEventListener("click", () => post.classList.add("hidden"));

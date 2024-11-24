@@ -27,6 +27,14 @@ header {
   height: 100%;
   text-align: start;
 }
+
+.post {
+  width: 40rem;
+  height: 30.9rem;
+
+  top: 55rem;
+}
+
 .writeUp {
   display: flex;
   flex-direction: column;
