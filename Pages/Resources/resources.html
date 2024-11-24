@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
 
     <script
       src="https://kit.fontawesome.com/9043769453.js"
@@ -26,7 +30,22 @@
   </head>
   <body>
     <header>
+      <div class="mobileMenu hidden">
+        <div class="innerCont">
+          <i class="fa fa-times close" aria-hidden="true"></i>
+          <ul>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
+      </div>
       <nav>
+        <div class="ham">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         <div class="logo">
           <img src="Images/Spot_logo-removebg-preview.png" alt="Spot logo" />
         </div>
@@ -233,5 +252,7 @@
         <p>© 2024 Spot. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="../data.js"></script>
   </body>
 </html>
