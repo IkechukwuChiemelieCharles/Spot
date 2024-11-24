@@ -351,6 +351,7 @@ footer {
 }
 .ham {
   cursor: pointer;
+  display: none;
 }
 .ham i {
   font-size: 4rem;
@@ -462,7 +463,9 @@ footer {
   html {
     font-size: 60%;
   }
-
+  .ham {
+    display: flex;
+  }
   #search {
     margin-right: 0;
     margin-bottom: 1rem;
@@ -538,6 +541,7 @@ footer {
   html {
     font-size: 51%;
   }
+
   .nav-icons img {
     margin: 1rem;
   }

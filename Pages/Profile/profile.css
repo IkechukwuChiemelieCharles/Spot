@@ -28,6 +28,7 @@ html {
 
 .ham {
   cursor: pointer;
+  display: none;
 }
 .ham i {
   font-size: 4rem;
@@ -619,7 +620,9 @@ footer {
   .list {
     display: none;
   }
-
+  .ham {
+    display: flex;
+  }
   nav {
     justify-content: space-between;
     padding: 0 2rem;

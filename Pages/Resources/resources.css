@@ -27,6 +27,7 @@ html {
 }
 .ham {
   cursor: pointer;
+  display: none;
 }
 .ham i {
   font-size: 4rem;
@@ -514,6 +515,9 @@ footer {
     font-size: 56.25%;
   }
 
+  .ham {
+    display: flex;
+  }
   .un-list {
     display: none;
   }
