@@ -131,9 +131,9 @@
           <i class="fa fa-times xBtn" aria-hidden="true"></i>
         </div>
         <textarea
-          placeholder="Post your project to receive valuable feedbacks..."
+          placeholder="Post your project to receive valuable feedbacks... "
           name=""
-          id=""
+          id="textArea"
         ></textarea>
       </div>
 
@@ -151,7 +151,9 @@
           </div> -->
           <input class="file" type="file" />
         </div>
-        <button class="yellow"><a href="./community.html">Post</a></button>
+        <button class="inActiveBtn">
+          <a href="./community.html">Post</a>
+        </button>
       </div>
     </div>
     <main>
@@ -213,7 +215,7 @@
             <i class="fa fa-heart liked" aria-hidden="true"></i>
             <p>Like</p>
           </span>
-          <span>
+          <span id="comment">
             <i class="fa fa-comment commented" aria-hidden="true"></i>
 
             <p>Comment</p>
@@ -222,6 +224,107 @@
             <i class="fa fa-share shared" aria-hidden="true"></i>
             <p>Share</p>
           </span>
+        </div>
+        <div class="dropDownCont hidden">
+          <div class="commTop">
+            <img src="./img/Top Right Icon.png" alt="" />
+            <div class="inputCont">
+              <input type="text" placeholder="Add a comment.." />
+              <select name="feedback" class="feedback" id="">
+                <option value="">Typography</option>
+                <option value="">Color</option>
+                <option value="">Layout</option>
+                <option value="">Imagery</option>
+                <option value="">Accessibility</option>
+                <option value="">Overall Experience</option>
+              </select>
+              <div class="smileXImg">
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="commMid">
+            <select name="relevant" id="" class="relevant">
+              <option value="">Most relevant</option>
+              <option value="">Most recent</option>
+              <option value="">Typography</option>
+              <option value="">Color</option>
+              <option value="">Layout</option>
+              <option value="">Imagery</option>
+              <option value="">Accessibility</option>
+              <option value="">Overall Experience</option>
+            </select>
+            <div class="comments">
+              <img src="./img/Top Right Icon.png" alt="" />
+
+              <aside>
+                <div class="profileXtext">
+                  <div class="taye">
+                    <p class="profile">
+                      <b>Taye Abolarin</b> <span>(Product Designer)</span>
+                    </p>
+                    <div class="hash">
+                      <p>#Feedback</p>
+                      <span>5 minutes ago</span>
+                    </div>
+                  </div>
+                  <p class="texts">
+                    I really like the font choice, but the line spacing feels a
+                    bit tight, especially for body text. Increasing the line
+                    height could improve readability.
+                  </p>
+                </div>
+
+                <div class="commIcons">
+                  <div class="like liked">
+                    <i class="fa fa-heart liked" aria-hidden="true"></i>
+                    <p>Like</p>
+                  </div>
+                  <div>
+                    <i class="fa fa-comment commented" aria-hidden="true"></i>
+
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+
+            <div class="comments">
+              <img src="./img/Top Right Icon.png" alt="" />
+
+              <aside>
+                <div class="profileXtext">
+                  <div class="taye">
+                    <p class="profile">
+                      <b>Taye Abolarin</b> <span>(Product Designer)</span>
+                    </p>
+                    <div class="hash">
+                      <p>#Feedback</p>
+                      <span>5 minutes ago</span>
+                    </div>
+                  </div>
+                  <p class="texts">
+                    I really like the font choice, but the line spacing feels a
+                    bit tight, especially for body text. Increasing the line
+                    height could improve readability.
+                  </p>
+                </div>
+
+                <div class="commIcons">
+                  <div class="like liked">
+                    <i class="fa fa-heart liked" aria-hidden="true"></i>
+                    <p>Like</p>
+                  </div>
+                  <div>
+                    <i class="fa fa-comment commented" aria-hidden="true"></i>
+
+                    <p>Reply</p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
         </div>
       </div>
 

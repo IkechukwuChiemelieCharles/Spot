@@ -23,6 +23,13 @@ const inputClick = document.getElementById("inputClick");
 const xBtn = document.querySelector(".xBtn");
 const post = document.querySelector(".post");
 const postOverLay = document.querySelector(".postOverLay");
+const textArea = document.querySelector("#textArea");
+const inActiveBtn = document.querySelector(".inActiveBtn");
+console.log(textArea);
+
+//comment drop down
+const comment = document.querySelector("#comment");
+const commentDropDown = document.querySelector(".dropDownCont");
 
 //open harmburger
 function openMenu() {
@@ -98,3 +105,13 @@ function closePost() {
 }
 xBtn.addEventListener("click", closePost);
 postOverLay.addEventListener("click", closePost);
+
+textArea.addEventListener("click", function () {
+  inActiveBtn.classList.add("ActiveBtn");
+});
+
+// open comment drop down
+comment.addEventListener("click", function () {
+  commentDropDown.classList.remove("hidden");
+  console.log("clicked");
+});

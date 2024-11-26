@@ -30,9 +30,6 @@ body {
   flex-direction: column;
 }
 
-.hidden {
-  display: none;
-}
 .postOverLay {
   background-color: #0c0c0c8c;
   width: 100vw;
@@ -130,51 +127,24 @@ body {
   padding-bottom: 1rem;
   padding-left: 2rem;
 }
-.secondDiv button {
+.inActiveBtn {
   width: 8.4rem;
   height: 4rem;
   align-self: flex-end;
-  background-color: var(--yellow);
+  background-color: var(--grey);
   border-radius: 0.8rem;
   color: var(--white);
   border: none;
   margin-right: 2rem;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+.secondDiv button a {
+  color: var(--white);
+}
+.ActiveBtn {
+  background-color: var(--yellow);
 }
 
-/* .file-input-container {
-  display: flex;
-  position: relative;
-}
-.file-input {
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  border: none;
-}
-.custom-file-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 20rem;
-  height: 5rem;
-  text-align: center;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-}
-.custom-file-label i {
-  font-size: 2.5rem;
-} */
 header {
   background-image: url(./img/Right\ Section\ Image.png);
   background-position: left;
@@ -189,9 +159,7 @@ header {
   gap: 4rem;
   padding: 18.8rem 1.6rem 3.88rem 1.6rem;
 }
-.clicked {
-  color: var(--yellow);
-}
+
 .unclicked {
   color: var(--white);
 }
@@ -299,9 +267,9 @@ header {
 button {
   cursor: pointer;
 }
-button:hover {
+/* button:hover {
   background-color: var(--hover);
-}
+} */
 b {
   color: var(--yellow);
 }
@@ -695,6 +663,171 @@ main .posts {
   border-radius: 0.8rem;
 }
 
+/* postDropDown/////////////////////// */
+.dropDownCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  animation-name: comment;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes comment {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 40rem;
+  }
+}
+.dropDownCont .commTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dropDownCont .top img {
+  width: 4rem;
+  height: 4rem;
+}
+.dropDownCont .inputCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+  width: 100%;
+  border: 1px solid var(--grey);
+  border-radius: 4rem;
+  /* position: relative; */
+}
+
+.dropDownCont .inputCont input {
+  height: 100%;
+  border: none;
+  background: none;
+  color: var(--white);
+  padding-left: 2rem;
+
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+.dropDownCont .feedback {
+  width: 6.3rem;
+  height: 4.8rem;
+  /* margin-right: 0.5rem; */
+}
+.dropDownCont .smileXImg {
+  display: flex;
+  gap: 1rem;
+  /* margin-right: 0.5rem; */
+}
+.dropDownCont i {
+  font-size: 2rem;
+  color: var(--white);
+}
+.commMid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  /* margin-top: 2rem; */
+}
+.relevant {
+  width: 13.5rem;
+  height: 3.8rem;
+  background: none;
+  border: none;
+  color: var(--white);
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.comments span h2 {
+  color: var(--yellow);
+  font-size: 1.6rem;
+}
+.post i {
+  color: var(--white);
+}
+.comments span {
+  font-size: 1.333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--white);
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.comments .profileXtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.profileXtext p {
+  color: var(--white);
+}
+.profileXtext .texts {
+  font-size: 1.333rem;
+}
+.taye {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 19.7rem;
+}
+.taye .profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.taye .hash {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.taye .hash p {
+  color: var(--borderYello);
+  font-size: 1.333rem;
+}
+.commIcons {
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+.commIcons div {
+  display: flex;
+
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--white);
+}
 footer {
   width: 100vw;
   height: 168.4rem;
@@ -889,4 +1022,10 @@ footer .secondFooter .icons span:hover {
 .blank:hover {
   background-color: var(--yellow);
   color: var(--white);
+}
+.hidden {
+  display: none;
+}
+.clicked {
+  color: var(--yellow);
 }
