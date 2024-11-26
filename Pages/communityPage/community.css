@@ -671,6 +671,7 @@ main .posts {
   flex-direction: column;
   width: 100%;
   gap: 1rem;
+  margin-top: 0.5rem;
   animation-name: comment;
   animation-duration: 0.2s;
   animation-timing-function: linear;
@@ -689,7 +690,7 @@ main .posts {
 }
 .dropDownCont .commTop {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -721,12 +722,12 @@ main .posts {
 .dropDownCont .feedback {
   width: 6.3rem;
   height: 4.8rem;
-  /* margin-right: 0.5rem; */
+  margin-right: 0.5rem;
 }
 .dropDownCont .smileXImg {
   display: flex;
   gap: 1rem;
-  /* margin-right: 0.5rem; */
+  margin-right: 0.5rem;
 }
 .dropDownCont i {
   font-size: 2rem;
@@ -1025,7 +1026,4 @@ footer .secondFooter .icons span:hover {
 }
 .hidden {
   display: none;
-}
-.clicked {
-  color: var(--yellow);
 }
