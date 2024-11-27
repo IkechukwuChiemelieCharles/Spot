@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
 
     <script
       src="https://kit.fontawesome.com/9043769453.js"
@@ -25,17 +29,32 @@
   </head>
   <body>
     <header>
+      <div class="mobileMenu hidden">
+        <div class="innerCont">
+          <i class="fa fa-times close" aria-hidden="true"></i>
+          <ul>
+            <li><a class="" href="../HomePage/homepage.html">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
+      </div>
       <nav>
+        <div class="ham">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         <div class="logo">
           <img src="Images/Spot_logo-removebg-preview.png" alt="Spot logo" />
         </div>
         <div class="un-list">
           <ul class="list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">My Projects</a></li>
-            <li><a href="#">Communities</a></li>
-            <li><a href="#">Resources Page</a></li>
+            <li><a href="../HomePage/homepage.html">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
           </ul>
         </div>
         <div class="nav-icons">
@@ -82,11 +101,11 @@
 
     <section class="below-hero">
       <div class="feed">
-        <p class="file">Profile Overview</p>
-        <p class="back">
+        <p class="file yellow">Profile Overview</p>
+        <p class="back blank">
           Feedback &nbsp; <i class="fa-solid fa-chevron-down"></i>
         </p>
-        <p class="later">
+        <p class="later blank">
           Saved for Later &nbsp; <i class="fa-solid fa-chevron-down"></i>
         </p>
       </div>
@@ -150,10 +169,18 @@
         </div>
         <div class="project">
           <div class="jet">
-            <p><a href="">Upload a New Project</a></p>
+            <p>
+              <a class="yellow" href="../ProjectPage/uploadSubPage/upload.html"
+                >Upload a New Project</a
+              >
+            </p>
           </div>
           <div class="view">
-            <p><a href="">View All Project</a></p>
+            <p>
+              <a class="blank" href="../ProjectPage/project.html"
+                >View All Project</a
+              >
+            </p>
           </div>
         </div>
       </div>
@@ -194,15 +221,17 @@
             Sign up for our newsletter to get the latest updates,
             <span class="high">design tips, and community highlights!</span>
           </p>
-          <form action="">
+          <form action="./subSuccess/success.html">
             <input
               type="email"
               name="email"
               id="email"
+              required
               placeholder="Enter your Email Address"
             />
             <button type="submit" id="mit">
-              Suscribe <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              Subscribe
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
             </button>
           </form>
         </div>
@@ -221,5 +250,6 @@
         <p>© 2024 Spot. All rights reserved.</p>
       </div>
     </footer>
+    <script src="../data.js"></script>
   </body>
 </html>

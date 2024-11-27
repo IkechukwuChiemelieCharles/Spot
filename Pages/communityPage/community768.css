@@ -26,6 +26,11 @@ header {
   background-repeat: no-repeat; */
 }
 
+.post {
+  width: 68rem;
+  height: 40.9rem;
+}
+
 .searchInp {
   margin-left: 20rem;
 }
@@ -74,4 +79,13 @@ main .posts {
 
 .posts .mid .postImgCont2 .smImg {
   width: 40%;
+}
+
+.category {
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.dropDownCont .inputCont input {
+  width: 100%;
 }

@@ -199,6 +199,17 @@ html {
   object-fit: cover;
 }
 
+#submit:hover {
+  background: none;
+  border: 0.2rem solid rgb(221, 167, 4);
+  cursor: pointer;
+}
+#s-media:hover {
+  background: none;
+  border: 0.2rem solid rgb(221, 167, 4);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 60%;

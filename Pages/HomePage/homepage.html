@@ -28,6 +28,19 @@
   </head>
   <body>
     <header>
+      <div class="mobileMenu hidden">
+        <div class="innerCont">
+          <i class="fa fa-times close" aria-hidden="true"></i>
+          <ul>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
+      </div>
+
       <nav>
         <div class="hamNlogo">
           <div class="ham">
@@ -70,7 +83,9 @@
       </div>
 
       <div class="btn">
-        <a class="sign" href="../Explore/explore.html">Explore Projects</a>
+        <a class="sign yellow" href="../Explore/explore.html"
+          >Explore Projects</a
+        >
       </div>
     </header>
     <main>
@@ -122,7 +137,7 @@
             better decisions.
           </p>
         </div>
-        <a href="../Explore/explore.html">Explore Projects</a>
+        <a class="yellow" href="../Explore/explore.html">Explore Projects</a>
       </div>
     </main>
     <section class="section1">
@@ -551,7 +566,7 @@
           </div>
         </div>
       </div>
-      <a href="../Explore/explore.html">Explore More</a>
+      <a class="yellow" href="../Explore/explore.html">Explore More</a>
     </section>
     <!-- 
     <section class="section3">
@@ -731,8 +746,12 @@
         </p>
       </div>
       <div class="btn">
-        <a class="explore" href="../Explore/explore.html">Explore Projects</a>
-        <a class="see" href="../communityPage/community.html">See Community </a>
+        <a class="explore yellow" href="../Explore/explore.html"
+          >Explore Projects</a
+        >
+        <a class="see blank" href="../communityPage/community.html"
+          >See Community
+        </a>
       </div>
     </div>
 
@@ -776,7 +795,7 @@
               design strategies.
             </p>
           </div>
-          <button>Explore Our Resources</button>
+          <button class="yellow">Explore Our Resources</button>
         </div>
       </div>
     </aside>
@@ -821,15 +840,16 @@
             Sign up for our newsletter to get the latest updates, design tips,
             and community highlights!
           </p>
-          <form action="">
+          <form action="./subSuccess/success.html">
             <input
               placeholder="Enter you Email Address"
               type="email"
               name=""
               id=""
+              required
             />
-            <button class="sub">
-              <a href="#">Subscribe </a>
+            <button class="sub yellow">
+              Subscribe
 
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
             </button>
@@ -849,5 +869,7 @@
         <h4>© 2024 Spot. All rights reserved.</h4>
       </div>
     </footer>
+
+    <script src="../data.js"></script>
   </body>
 </html>

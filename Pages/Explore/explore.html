@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
+<link rel="stylesheet" href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css">
     <script
       src="https://kit.fontawesome.com/9043769453.js"
       crossorigin="anonymous"
@@ -25,7 +25,23 @@
   </head>
   <body>
     <header>
+      <div class="mobileMenu hidden">
+        <div class="innerCont">
+          <i class="fa fa-times close" aria-hidden="true"></i>
+          <ul>
+            <li><a class="home" href="../HomePage/homepage.html">Home</a></li>
+            <li><a href="../Explore/explore.html" class="ore">Explore</a></li>
+            <li><a href="../ProjectPage/project.html">My Projects</a></li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
+      </div>
       <nav>
+
+        <div class="ham">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         <div class="logo">
           <img src="Images/Spot_logo-removebg-preview.png" alt="Spot logo" />
         </div>
@@ -62,7 +78,7 @@
             <span class="world"> from around the world.</span>
           </p>
         </div>
-        <div class="search1">
+        <div class="search1 ">
           <div class="share">
             <form action="">
               <input
@@ -71,7 +87,7 @@
                 id="search"
                 placeholder="Find projects, share feedback, and explore what inspires you"
               />
-              <button type="submit" id="maad">Search</button>
+              <button type="submit" id="maad" class="search yellow">Search</button>
             </form>
             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
         </div>
@@ -187,9 +203,9 @@
         <div class="subb">
           <p class="stay">Stay Updated</p>
           <p class="news">Sign up for our newsletter to get the latest updates, <span class="tips">design tips, and community highlights!</span></p>
-          <form action="">
-            <input type="email" name="email" id="email" placeholder="Enter your Email Address">
-            <button type="submit" id="mit">Suscribe <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+          <form  action="./subSuccess/success.html">
+            <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
+            <button type="submit" id="mit"> Subscribe <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
           </form>
         </div>
       </div>
@@ -206,5 +222,8 @@
         <p>© 2024 Spot. All rights reserved.</p>
       </div>
     </footer>
+
+
+    <script src="../data.js"></script>
   </body>
 </html>

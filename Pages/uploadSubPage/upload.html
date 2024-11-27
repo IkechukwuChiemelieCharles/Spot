@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./upload.css" />
+    <link rel="stylesheet" href="./upload640.css" media="(min-width:640px)" />
+    <link rel="stylesheet" href="./upload1280.css" media="(min-width:1280px)" />
+
+    <link
+      rel="stylesheet"
+      href="../HomePage/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../HomePage/img/logoSvg.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>first Upload Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="breadCrumbs">
+        <a href="../HomePage/homepage.html">Home</a>
+        <b>/</b> <a href="../ProjectPage/project.html"> My Projects</a> <b>/</b>
+        <span>Upload New Projects</span>
+      </header>
+      <main>
+        <h1>Show Off Your Best Work!</h1>
+        <div class="form">
+          <div class="left">
+            <img src="../ProjectPage/img/Thumbnail.png" alt="" />
+          </div>
+          <div class="right">
+            <div class="div">
+              <label for="">Project Name</label>
+              <input
+                placeholder="Enter the project name"
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="div">
+              <label for="">Project Description</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="Enter the project description"
+              ></textarea>
+              <!-- <input
+                placeholder="Enter the project description"
+                type="text"
+                name=""
+                id=""
+              /> -->
+            </div>
+            <div class="category div">
+              <label for=""> Project Category</label>
+
+              <div class="customSelect">
+                <button class="selectButton">
+                  Select an option
+                  <div class="arrDown">
+                    <i class="fa fa-caret-down" id="" aria-hidden="true"></i>
+                  </div>
+                  <div class="arrUp hide">
+                    <i class="fa fa-caret-up" id="arrUp" aria-hidden="true"></i>
+                  </div>
+                </button>
+                <ul class="options hide">
+                  <li class="option">
+                    Animations
+                    <img
+                      class="imgDown hide"
+                      src="../ProjectPage/img/carretDown.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="option">Graphic Designs</li>
+                  <li class="option">Illustrations</li>
+                  <li class="option">UI/UX</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- start/////////////// -->
+
+            <!-- finish//////////// -->
+
+            <div class="div">
+              <label for=""> Project Tags</label>
+              <input
+                placeholder="Add tags to help people discover your project"
+                type="text"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <article>
+        <h2>Upload visuals that best showcase your project.</h2>
+        <p>
+          Accepted formats: .jpg, .png, .gif, .mp4, and .mov (Max 10MB each 20MB
+          for videos)
+        </p>
+        <a class="yellow" href="../upload2/upload2.html"
+          >Add Media <i class="fa fa-plus" aria-hidden="true"></i>
+        </a>
+      </article>
+      <footer>
+        <a class="cancel blank" href="../ProjectPage/project.html"> Cancel </a>
+
+        <div class="btns">
+          <a class="save yellow" href="#"> Save as Draft </a>
+          <a class="publish yellow" href="../uploadSuccess/success.html">
+            Publish Project
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../data.js"></script>
+  </body>
+</html>

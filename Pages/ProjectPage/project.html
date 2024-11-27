@@ -40,6 +40,20 @@
   </head>
   <body>
     <header>
+      <div class="mobileMenu hidden">
+        <div class="innerCont">
+          <i class="fa fa-times close" aria-hidden="true"></i>
+          <ul>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="../Explore/explore.html">Explore</a></li>
+            <li>
+              <a class="proj" href="../ProjectPage/project.html">My Projects</a>
+            </li>
+            <li><a href="../communityPage/community.html">Communities</a></li>
+            <li><a href="../Resources/resources.html">Resources Page</a></li>
+          </ul>
+        </div>
+      </div>
       <nav>
         <div class="hamNlogo">
           <div class="ham">
@@ -90,20 +104,19 @@
 
       <div class="btn">
         <!-- <a class="sign" href="">Explore Projects</a> -->
-        <a class="upload" href="../ProjectPage/uploadSubPage/upload.html"
+        <a class="upload yellow" href="../uploadSubPage/upload.html"
           >Upload a Project</a
         >
-        <a class="view" href="#">View All Projects </a>
+        <a class="view blank" href="../Explore/explore.html"
+          >View All Projects
+        </a>
       </div>
     </header>
 
     <section class="section2">
       <div class="topWriteUp">
-        <h1>Top Designs Spotlight</h1>
-        <p>
-          Explore the most admired projects and get inspired by the creativity
-          of our community’s top designers.
-        </p>
+        <h1>Your Projects at a Glance</h1>
+        <p>Manage and review all your creative work in one place.</p>
       </div>
       <div class="boxes">
         <div class="flexXl">
@@ -335,10 +348,12 @@
         </div>
       </div>
       <div class="btn">
-        <a class="upload" href="../ProjectPage/uploadSubPage/upload.html"
+        <a class="upload yellow" href="../uploadSubPage/upload.html"
           >Upload a Project</a
         >
-        <a class="view" href="#">View All Projects</a>
+        <a class="view blank" href="../Explore/explore.html"
+          >View All Projects</a
+        >
       </div>
     </section>
 
@@ -383,15 +398,16 @@
             Sign up for our newsletter to get the latest updates, design tips,
             and community highlights!
           </p>
-          <form action="">
+          <form action="./subSuccess/success.html">
             <input
               placeholder="Enter you Email Address"
               type="email"
               name=""
               id=""
+              required
             />
-            <button class="sub">
-              <a href="">Subscribe </a>
+            <button class="sub yellow">
+              Subscribe
 
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
             </button>
@@ -413,5 +429,6 @@
         <h4>© 2024 Spot. All rights reserved.</h4>
       </div>
     </footer>
+    <script src="../data.js"></script>
   </body>
 </html>

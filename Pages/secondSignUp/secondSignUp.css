@@ -25,16 +25,13 @@ body {
   background-color: var(--black);
   font-family: "Open Sans";
 }
-.btn:hover {
-  background-color: var(--hover);
-}
+
 a {
   color: #dda704;
   text-decoration: none;
   /* font-size: 1rem; */
 }
-.submit a:hover {
-}
+
 main {
   display: flex;
   flex-direction: column;
@@ -206,6 +203,12 @@ input::placeholder {
 .sec {
   display: none;
 }
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
+}
 
 @media screen and (min-width: 640px) {
   body {
@@ -276,14 +279,12 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
-  body {
-  }
   form {
     width: 54.2rem;
     height: 64rem;
@@ -341,15 +342,12 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   body {
   }
-}
+} */
 
 @media screen and (min-width: 1536px) {
-  body {
-  }
-
   .fName > input,
   .lName > input,
   .country > input {

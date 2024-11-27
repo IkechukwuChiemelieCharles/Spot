@@ -39,9 +39,6 @@ body {
 .btn {
   border-radius: 0.5rem;
 }
-.submit:hover {
-  background-color: var(--hover);
-}
 
 a {
   color: var(--yellow);
@@ -214,6 +211,19 @@ input::placeholder {
 }
 section {
   display: none;
+}
+
+form .icons span:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+}
+
+.yellow:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 640px) {

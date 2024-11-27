@@ -34,9 +34,9 @@
     <header>
       <nav>
         <div class="hamNlogo">
-          <div class="ham">
+          <!-- <div class="ham">
             <i class="fa fa-bars" aria-hidden="true"></i>
-          </div>
+          </div> -->
           <div class="logo">
             <img src="./img/Spot_logo-removebg-preview 1.png" alt="" />
           </div>
@@ -52,10 +52,10 @@
         </ul> -->
 
         <div class="links">
-          <a class="sign" href="./Pages/firstSignUp/firstSignUp.html"
+          <a class="sign yellow" href="./Pages/firstSignUp/firstSignUp.html"
             >Sign Up Now</a
           >
-          <a class="login" href="./Pages/Login/login.html">Login </a>
+          <a class="login blank" href="./Pages/Login/login.html">Login </a>
         </div>
 
         <!-- <div class="bellNsearch">
@@ -82,8 +82,10 @@
 
       <div class="btn">
         <!-- <a class="sign" href="">Explore Projects</a> -->
-        <a class="sign" href="./Pages/firstSignUp/firstSignUp.html">Sign Up</a>
-        <a class="login" href="./Pages/Login/login.html">Login </a>
+        <a class="sign yellow" href="./Pages/firstSignUp/firstSignUp.html"
+          >Sign Up</a
+        >
+        <a class="login blank" href="./Pages/Login/login.html">Login </a>
       </div>
     </header>
     <main>
@@ -135,7 +137,7 @@
             better decisions.
           </p>
         </div>
-        <a href="./Pages/Explore/explore.html">Explore Projects</a>
+        <a class="yellow" href="./Pages/Login/login.html">Explore Projects</a>
       </div>
     </main>
     <section class="section1">
@@ -317,6 +319,7 @@
       </div>
       <div class="boxes">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
+
         <i class="fa fa-caret-right" aria-hidden="true"></i>
         <div class="box">
           <div class="imgCont">
@@ -413,7 +416,9 @@
               design strategies.
             </p>
           </div>
-          <button>Explore Our Resources</button>
+          <button class="yellow">
+            <a href="./Pages/Login/login.html">Explore Our Resources</a>
+          </button>
         </div>
       </div>
     </aside>
@@ -443,13 +448,21 @@
           <h5>Socialize</h5>
           <p>Follow us on our social media channels</p>
           <div class="icons">
-            <span><i class="fa fa-google" aria-hidden="true"></i> </span>
-            <span>
+            <span class="yellow"
+              ><i class="fa fa-google yellow" aria-hidden="true"></i>
+            </span>
+            <span class="yellow">
               <i class="fa fa-apple" aria-hidden="true"></i>
             </span>
-            <span><i class="fa fa-behance" aria-hidden="true"></i> </span>
-            <span><i class="fa fa-dribbble" aria-hidden="true"></i> </span>
-            <span><i class="fa fa-linkedin" aria-hidden="true"></i> </span>
+            <span class="yellow"
+              ><i class="fa fa-behance" aria-hidden="true"></i>
+            </span>
+            <span class="yellow"
+              ><i class="fa fa-dribbble" aria-hidden="true"></i>
+            </span>
+            <span class="yellow"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </span>
           </div>
         </div>
         <div class="secondFooterright">
@@ -458,15 +471,16 @@
             Sign up for our newsletter to get the latest updates, design tips,
             and community highlights!
           </p>
-          <form action="">
+          <form action="./Pages/subSuccess/success.html">
             <input
               placeholder="Enter you Email Address"
               type="email"
               name=""
               id=""
+              required
             />
-            <button class="sub">
-              <a href="">Subscribe </a>
+            <button class="sub yellow">
+              Subscribe
 
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
             </button>

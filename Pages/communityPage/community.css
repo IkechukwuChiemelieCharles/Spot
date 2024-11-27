@@ -24,7 +24,127 @@ html {
 body {
   background-color: var(--black);
   font-family: "Open Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.postOverLay {
+  background-color: #0c0c0caf;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+.post {
+  display: flex;
+  width: 33rem;
+  height: 32.9rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--backGroundGray);
+  position: absolute;
+  top: 30rem;
+  border-radius: 0.8rem;
+  padding-bottom: 1rem;
+  z-index: 30;
+}
+/* .post textarea {
+  color: var(--white);
+  padding: 1rem;
+} */
+.mainTopCont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+.imgDiv {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.mainTopCont textarea {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--backGroundGray);
+  border: none;
+  color: var(--white);
+  padding: 1rem;
+}
+.post .file {
+  color: var(--white);
+}
+.imgDiv span h2 {
+  color: var(--yellow);
+  font-size: 1.6rem;
+}
+.post i {
+  color: var(--white);
+}
+.imgDiv span {
+  font-size: 1.333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--white);
+}
+
+.xBtn {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+.imgDiv img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.icons2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.7rem;
+  border-bottom: 1px solid var(--grey);
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+.inActiveBtn {
+  width: 8.4rem;
+  height: 4rem;
+  align-self: flex-end;
+  background-color: var(--grey);
+  border-radius: 0.8rem;
+  color: var(--white);
+  border: none;
+  margin-right: 2rem;
+  /* cursor: pointer; */
+}
+.secondDiv button a {
+  color: var(--white);
+}
+.ActiveBtn {
+  background-color: var(--yellow);
+}
+
 header {
   background-image: url(./img/Right\ Section\ Image.png);
   background-position: left;
@@ -39,6 +159,100 @@ header {
   gap: 4rem;
   padding: 18.8rem 1.6rem 3.88rem 1.6rem;
 }
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: var(--black);
+  width: 0;
+  height: 30.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 2rem 0 */
+  animation-name: open;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  0% {
+    width: 0;
+  }
+
+  90% {
+    width: 110vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+.mobileMenu i {
+  color: var(--white);
+  font-size: 4rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.mobileMenu i:hover {
+  color: var(--yellow);
+}
+.mobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  width: 100%;
+  height: 24rem;
+}
+.mobileMenu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--grey);
+  width: 100%;
+  height: 4.8rem;
+  /* border: 1px solid green; */
+  /* padding-bottom: 2rem; */
+  list-style-type: none;
+}
+.mobileMenu li:hover {
+  /* background-color: red; */
+  /* height: 5rem; */
+  border-bottom: 0.4rem solid var(--yellow);
+  text-align: center;
+}
+.mobileMenu ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+
+  height: 28.8rem;
+}
+.hidden {
+  display: none;
+}
+.ham {
+  cursor: pointer;
+}
+
 .overlay {
   width: 100%;
   height: 60.1rem;
@@ -50,9 +264,9 @@ header {
 button {
   cursor: pointer;
 }
-button:hover {
+/* button:hover {
   background-color: var(--hover);
-}
+} */
 b {
   color: var(--yellow);
 }
@@ -122,7 +336,9 @@ nav .bellNsearch {
   width: 14.4rem;
 }
 nav .bellNsearch {
-  width: 18vw;
+  width: 14.4rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .links {
@@ -174,7 +390,7 @@ nav .bellNsearch {
 }
 
 .TopRightIcon {
-  display: none;
+  /* display: none; */
 }
 
 .writeUp {
@@ -250,6 +466,7 @@ main {
   align-items: center;
   width: 35.9rem;
   height: 4.6rem;
+  border: 1px;
 
   /* gap: 4rem; */
 }
@@ -262,9 +479,17 @@ main {
   align-items: center;
   text-wrap: nowrap;
   padding: 2rem;
+  border-radius: 0.4rem;
 }
 .topLinks a:hover {
   background-color: var(--yellow);
+  color: var(--white);
+}
+
+.whats {
+  background-color: var(--yellow);
+}
+.whats a {
   color: var(--white);
 }
 
@@ -435,6 +660,375 @@ main .posts {
   border-radius: 0.8rem;
 }
 
+/* postDropDown/////////////////////// */
+.dropDownCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  animation-name: comment;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes comment {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 46.8rem;
+  }
+}
+.dropDownCont .commTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.dropDownCont .top img {
+  width: 4rem;
+  height: 4rem;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.dropDownCont .inputCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+  width: 100%;
+  border: 1px solid var(--grey);
+  border-radius: 4rem;
+}
+.inputText {
+  height: 100%;
+  border: none;
+  background: none;
+  color: var(--white);
+  padding-left: 2rem;
+
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+
+.keyDownCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 10.8rem;
+  width: 90%;
+  border: 1px solid var(--veryDarkGrey);
+  border-radius: 0.5rem;
+  position: relative;
+}
+.keyDownInput {
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  background: none;
+  color: var(--white);
+  padding-left: 2rem;
+  border-radius: 0;
+}
+
+.keyDownCommTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+  align-items: start;
+  /* margin-top: 8rem; */
+}
+
+.postBtn {
+  position: absolute;
+  right: 0;
+  bottom: 10;
+  width: 8.4rem;
+  height: 4rem;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--white);
+  border-radius: 0.8rem;
+}
+/*  */
+.dropDownCont .feedback {
+  width: 6.3rem;
+  height: 4.8rem;
+  margin-right: 0.5rem;
+}
+.dropDownCont .smileXImg {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.5rem;
+}
+.dropDownCont i {
+  font-size: 2rem;
+  color: var(--white);
+}
+.commMid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  /* margin-top: 2rem; */
+}
+.relevant {
+  width: 13.5rem;
+  height: 3.8rem;
+  background: none;
+  border: none;
+  color: var(--white);
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.comments span h2 {
+  color: var(--yellow);
+  font-size: 1.6rem;
+}
+.post i {
+  color: var(--white);
+}
+.comments span {
+  font-size: 1.333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--white);
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.comments .profileXtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.profileXtext p {
+  color: var(--white);
+}
+.profileXtext .texts {
+  font-size: 1.333rem;
+}
+.taye2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 19.7rem;
+}
+.taye2 .profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.taye2 .hash {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.taye2 .hash p {
+  color: var(--borderYello);
+  font-size: 1.333rem;
+}
+.commIcons {
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+.commIcons div {
+  display: flex;
+
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--white);
+}
+
+/* .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.6rem;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid red;
+} */
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.selectButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  align-items: center;
+  background-color: var(--borderYello);
+  color: var(--black);
+  border: 1px solid var(--placeHolder);
+  border-radius: 0.6rem;
+}
+.options {
+  width: 17.5rem;
+  /* height: 19.2rem; */
+  height: 0;
+  background-color: var(--grey);
+  right: 10;
+  top: 4rem;
+
+  animation-name: open;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 5;
+  text-wrap: nowrap;
+}
+
+.arrDown i,
+.arrUp i {
+  color: var(--black);
+}
+.option {
+  list-style: none;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.option:hover {
+  background-color: var(--yellow);
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 30.4rem;
+  }
+}
+
+.customSelect2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.selectButton2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  align-items: center;
+  background: none;
+  border-radius: 0.6rem;
+  border: none;
+  display: flex;
+  gap: 1rem;
+  color: var(--white);
+  text-wrap: nowrap;
+}
+.arrDown2 i,
+.arrUp2 i {
+  color: var(--white);
+}
+.options2 {
+  width: 17.5rem;
+  /* height: 19.2rem; */
+  height: 0;
+  background-color: var(--grey);
+  right: 10;
+  top: 4rem;
+
+  animation-name: open2;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 5;
+  text-wrap: nowrap;
+}
+
+.option2 {
+  list-style: none;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.option2:hover {
+  background-color: var(--yellow);
+}
+
+@keyframes open2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 36.4rem;
+  }
+}
+.hide {
+  display: none;
+}
+
 footer {
   width: 100vw;
   height: 168.4rem;
@@ -554,6 +1148,7 @@ footer form input {
   padding-left: 1.2rem;
   border-radius: 0.8rem;
   background-color: var(--black);
+  color: var(--white);
 }
 
 footer form button {
@@ -611,4 +1206,30 @@ footer .fourthFooter {
   background-color: var(--black);
   color: var(--grey);
   font-size: 1.6rem;
+}
+
+footer .secondFooter .icons span:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+}
+
+.yellow:hover {
+  background: none;
+  border: 0.1rem solid var(--yellow);
+  cursor: pointer;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+.hidden {
+  display: none;
+}
+.clicked {
+  color: var(--yellow);
+}
+.unclicked {
+  color: var(--white);
 }

@@ -25,6 +25,7 @@ body {
   background-color: var(--black);
   font-family: "Open Sans";
 }
+
 header {
   background-image: url(./img/1729774943213.png);
   background-position: left;
@@ -55,36 +56,95 @@ a:hover {
   color: var(--hover);
 }
 
-.right button:hover {
-  background-color: var(--hover);
-}
-button {
-  cursor: pointer;
-}
-.text a:hover {
-  background-color: var(--hover);
-}
-.see:hover {
-  color: var(--white);
-}
-/* demacation/////// */
-
-.btn a:hover {
-  background-color: var(--hover);
-}
-.sub:hover {
-  color: white;
-  background-color: var(--hover);
-}
-.sub a:hover {
-  color: white;
-}
-.icons a:hover {
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
   background-color: var(--black);
+  width: 0;
+  height: 30.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 2rem 0 */
+  animation-name: open;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-.icons span {
+
+@keyframes open {
+  0% {
+    width: 0;
+  }
+
+  90% {
+    width: 110vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+.mobileMenu i {
+  color: var(--white);
+  font-size: 4rem;
+  align-self: flex-end;
   cursor: pointer;
 }
+.mobileMenu i:hover {
+  color: var(--yellow);
+}
+.mobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  width: 100%;
+  height: 24rem;
+}
+.mobileMenu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--grey);
+  width: 100%;
+  height: 4.8rem;
+  /* border: 1px solid green; */
+  /* padding-bottom: 2rem; */
+  list-style-type: none;
+}
+.mobileMenu li:hover {
+  /* background-color: red; */
+  /* height: 5rem; */
+  border-bottom: 0.4rem solid var(--yellow);
+  text-align: center;
+}
+.mobileMenu ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 28.8rem;
+}
+.hidden {
+  display: none;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -115,11 +175,14 @@ nav .bellNsearch {
   /* border: 1px solid red; */
 }
 nav .bellNsearch {
-  width: 18vw;
+  width: 22vw;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .ham {
   font-size: 3.2rem;
+  cursor: pointer;
 }
 .logo {
   width: 5.2rem;
@@ -137,7 +200,7 @@ nav .bellNsearch {
 }
 
 .TopRightIcon {
-  display: none;
+  /* display: nne; */
 }
 
 .writeUp {
@@ -833,6 +896,7 @@ footer form input {
   padding-left: 1.2rem;
   border-radius: 0.8rem;
   background-color: var(--black);
+  color: var(--white);
 }
 
 footer form button {
@@ -891,4 +955,27 @@ footer .fourthFooter {
   background-color: var(--black);
   color: var(--grey);
   font-size: 1.6rem;
+}
+
+footer .secondFooter .icons span:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--hover);
+}
+.yellow:hover {
+  background: none;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.blank:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 0;
 }

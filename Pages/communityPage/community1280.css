@@ -21,6 +21,11 @@ nav ul {
   gap: 4.4rem;
 }
 
+.post {
+  width: 98rem;
+  height: 45.9rem;
+}
+
 .posts .top {
   justify-content: start;
   width: 79.6rem;
@@ -30,6 +35,14 @@ nav ul {
   width: 79.6rem;
 }
 
+.dropDownCont {
+  width: 79.6rem;
+}
+
+.selectButton {
+  width: 100%;
+  text-wrap: nowrap;
+}
 /* .posts .top {
   display: flex;
   justify-content: center;
