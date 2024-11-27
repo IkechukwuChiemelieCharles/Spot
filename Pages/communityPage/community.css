@@ -31,7 +31,7 @@ body {
 }
 
 .postOverLay {
-  background-color: #0c0c0c8c;
+  background-color: #0c0c0caf;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -160,9 +160,6 @@ header {
   padding: 18.8rem 1.6rem 3.88rem 1.6rem;
 }
 
-.unclicked {
-  color: var(--white);
-}
 .mobileMenu {
   position: fixed;
   top: 0;
@@ -685,7 +682,7 @@ main .posts {
   }
 
   100% {
-    height: 40rem;
+    height: 42rem;
   }
 }
 .dropDownCont .commTop {
@@ -693,10 +690,18 @@ main .posts {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 1rem;
 }
+
 .dropDownCont .top img {
   width: 4rem;
   height: 4rem;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .dropDownCont .inputCont {
   display: flex;
@@ -706,10 +711,8 @@ main .posts {
   width: 100%;
   border: 1px solid var(--grey);
   border-radius: 4rem;
-  /* position: relative; */
 }
-
-.dropDownCont .inputCont input {
+.inputText {
   height: 100%;
   border: none;
   background: none;
@@ -719,6 +722,51 @@ main .posts {
   border-top-left-radius: 4rem;
   border-bottom-left-radius: 4rem;
 }
+
+.keyDownCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 10.8rem;
+  width: 90%;
+  border: 1px solid var(--veryDarkGrey);
+  border-radius: 0.5rem;
+  position: relative;
+}
+.keyDownInput {
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  background: none;
+  color: var(--white);
+  padding-left: 2rem;
+  border-radius: 0;
+}
+
+.keyDownCommTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+  align-items: start;
+  /* margin-top: 8rem; */
+}
+
+.postBtn {
+  position: absolute;
+  right: 0;
+  bottom: 10;
+  width: 8.4rem;
+  height: 4rem;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--white);
+  border-radius: 0.8rem;
+}
+/*  */
 .dropDownCont .feedback {
   width: 6.3rem;
   height: 4.8rem;
@@ -790,27 +838,27 @@ aside {
 .profileXtext .texts {
   font-size: 1.333rem;
 }
-.taye {
+.taye2 {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
   width: 19.7rem;
 }
-.taye .profile {
+.taye2 .profile {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 0.8rem;
   width: 100%;
 }
-.taye .hash {
+.taye2 .hash {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 0.8rem;
   width: 100%;
 }
-.taye .hash p {
+.taye2 .hash p {
   color: var(--borderYello);
   font-size: 1.333rem;
 }
@@ -829,6 +877,158 @@ aside {
   gap: 1rem;
   color: var(--white);
 }
+
+/* .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.6rem;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid red;
+} */
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.selectButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  align-items: center;
+  background-color: var(--borderYello);
+  color: var(--black);
+  border: 1px solid var(--placeHolder);
+  border-radius: 0.6rem;
+}
+.options {
+  width: 17.5rem;
+  /* height: 19.2rem; */
+  height: 0;
+  background-color: var(--grey);
+  right: 10;
+  top: 4rem;
+
+  animation-name: open;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 5;
+  text-wrap: nowrap;
+}
+
+.arrDown i,
+.arrUp i {
+  color: var(--black);
+}
+.option {
+  list-style: none;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.option:hover {
+  background-color: var(--yellow);
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 30.4rem;
+  }
+}
+
+.customSelect2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.selectButton2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  align-items: center;
+  background: none;
+  border-radius: 0.6rem;
+  border: none;
+  display: flex;
+  gap: 1rem;
+  color: var(--white);
+  text-wrap: nowrap;
+}
+.arrDown2 i,
+.arrUp2 i {
+  color: var(--white);
+}
+.options2 {
+  width: 17.5rem;
+  /* height: 19.2rem; */
+  height: 0;
+  background-color: var(--grey);
+  right: 10;
+  top: 4rem;
+
+  animation-name: open2;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 5;
+  text-wrap: nowrap;
+}
+
+.option2 {
+  list-style: none;
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+.option2:hover {
+  background-color: var(--yellow);
+}
+
+@keyframes open2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 36.4rem;
+  }
+}
+.hide {
+  display: none;
+}
+
 footer {
   width: 100vw;
   height: 168.4rem;
@@ -1026,4 +1226,10 @@ footer .secondFooter .icons span:hover {
 }
 .hidden {
   display: none;
+}
+.clicked {
+  color: var(--yellow);
+}
+.unclicked {
+  color: var(--white);
 }

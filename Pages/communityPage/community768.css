@@ -80,3 +80,12 @@ main .posts {
 .posts .mid .postImgCont2 .smImg {
   width: 40%;
 }
+
+.category {
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.dropDownCont .inputCont input {
+  width: 100%;
+}

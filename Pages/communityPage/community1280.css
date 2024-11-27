@@ -35,6 +35,14 @@ nav ul {
   width: 79.6rem;
 }
 
+.dropDownCont {
+  width: 79.6rem;
+}
+
+.selectButton {
+  width: 100%;
+  text-wrap: nowrap;
+}
 /* .posts .top {
   display: flex;
   justify-content: center;
