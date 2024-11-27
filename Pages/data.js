@@ -155,7 +155,7 @@ input.addEventListener("keydown", function () {
   input.classList.add("keyDownInput");
   commTop.classList.add("keyDownCommTop");
   postBtn.classList.remove("hide");
-  postHeight.style.height = "50rem";
+  // postHeight.style.height = `${80}${rem}`;
 
   console.log("click");
 });
