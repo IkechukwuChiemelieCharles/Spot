@@ -174,7 +174,7 @@ header {
   align-items: center;
   text-align: center;
   /* padding: 2rem 0 */
-  animation-name: open;
+  animation-name: opening;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-delay: 0s;
@@ -182,7 +182,7 @@ header {
   animation-fill-mode: forwards;
 }
 
-@keyframes open {
+@keyframes opening {
   0% {
     width: 0;
   }
