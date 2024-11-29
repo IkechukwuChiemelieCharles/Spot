@@ -425,6 +425,7 @@ nav .bellNsearch {
   z-index: 2;
   border-radius: 2.4rem;
   background-color: var(--veryDarkGrey);
+  cursor: pointer;
 }
 .input img {
   width: 4rem;
@@ -438,6 +439,7 @@ nav .bellNsearch {
   border: 1px solid var(--borderYello);
   padding-left: 1rem;
   color: var(--white);
+  cursor: pointer;
 }
 .input input::placeholder {
   color: var(--greyFont);
@@ -635,6 +637,7 @@ main .posts {
   align-items: center;
   color: white;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .posts .lower {
@@ -652,6 +655,7 @@ main .posts {
   align-items: center;
   font-size: 1.6rem;
   gap: 1rem;
+  cursor: pointer;
 }
 .load {
   width: 13.1rem;
