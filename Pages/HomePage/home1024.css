@@ -48,3 +48,7 @@ nav a:active {
 .mobileMenu {
   display: none;
 }
+
+main {
+  flex-direction: row;
+}

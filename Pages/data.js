@@ -11,8 +11,6 @@ const commentBtns = document.querySelectorAll(".commented");
 const commentBtns2 = document.querySelectorAll(".commented2");
 const shareBtns = document.querySelectorAll(".shared");
 
-console.log(likeBtn2);
-
 //drop down menu
 const dropDownBtn = document.querySelector(".selectButton");
 const dropDownMenu = document.querySelector(".options");
@@ -35,8 +33,8 @@ const textArea = document.querySelector("#textArea");
 const inActiveBtn = document.querySelector(".inActiveBtn");
 
 //comment drop down
-const comment = document.querySelector("#comment");
-const commentDropDown = document.querySelector(".dropDownCont");
+const comment = document.getElementsByClassName("comment");
+const commentDropDown = document.getElementsByClassName("dropDownCont")[0];
 
 //inner comment drop down
 const input = document.querySelector(".inputText");
@@ -65,7 +63,6 @@ for (const item of hamburger) {
 //Changing icon color
 function iconColor() {
   this.classList.toggle("clicked");
-  console.log("clicked");
 }
 function removeColor() {
   this.classList.toggle("unclicked");
@@ -97,7 +94,6 @@ dropDownBtn.addEventListener("click", function () {
   dropDownMenu.classList.toggle("hide");
 
   carretdown.classList.toggle("hide");
-  console.log("clicked");
 
   carretUp.classList.toggle("hide");
 });
@@ -139,10 +135,17 @@ textArea.addEventListener("click", function () {
 });
 
 // open comment drop down
-comment.addEventListener("click", function () {
-  commentDropDown.classList.remove("hidden");
-  console.log("clicked");
-});
+
+for (const item of comment) {
+  item.addEventListener("click", function () {
+    commentDropDown.classList.toggle("hidden");
+
+    // for (const item of commentDropDown) {
+    //   item.classList.toggle("hidden");
+    //   console.log("clicked");
+    // }
+  });
+}
 
 //inner comment drop down
 
@@ -156,8 +159,6 @@ input.addEventListener("keydown", function () {
   commTop.classList.add("keyDownCommTop");
   postBtn.classList.remove("hide");
   // postHeight.style.height = `${80}${rem}`;
-
-  console.log("click");
 });
 
 window.addEventListener("click", function (e) {
