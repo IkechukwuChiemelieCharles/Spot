@@ -33,8 +33,8 @@ const textArea = document.querySelector("#textArea");
 const inActiveBtn = document.querySelector(".inActiveBtn");
 
 //comment drop down
-const comment = document.getElementsByClassName("comment");
-const commentDropDown = document.getElementsByClassName("dropDownCont")[0];
+const comment = document.querySelectorAll(".comment");
+const commentDropDown = document.querySelectorAll(".dropDownCont");
 
 //inner comment drop down
 const input = document.querySelector(".inputText");
@@ -136,16 +136,25 @@ textArea.addEventListener("click", function () {
 
 // open comment drop down
 
-for (const item of comment) {
-  item.addEventListener("click", function () {
-    commentDropDown.classList.toggle("hidden");
-
-    // for (const item of commentDropDown) {
-    //   item.classList.toggle("hidden");
-    //   console.log("clicked");
-    // }
+comment.forEach(function (commentDrp, i) {
+  commentDrp.addEventListener("click", function () {
+    commentDropDown[i].classList.toggle("hidden");
   });
-}
+});
+
+// for (const item of comment) {
+//   item.addEventListener("click", function () {
+//     // commentDropDown.classList.toggle("hidden");
+
+//     commentDropDown.forEach((todo, i) => {
+//       todo[i].classList.toggle("hidden");
+//     });
+//     // for (const item of commentDropDown) {
+//     //
+//     //   console.log("clicked");
+//     // }
+//   });
+// }
 
 //inner comment drop down
 
