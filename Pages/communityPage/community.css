@@ -195,7 +195,8 @@ header {
     width: 100vw;
   }
 }
-.mobileMenu i {
+.mobileMenu i,
+.mobileMenu2 i {
   color: var(--white);
   font-size: 4rem;
   align-self: flex-end;
@@ -204,7 +205,8 @@ header {
 .mobileMenu i:hover {
   color: var(--yellow);
 }
-.mobileMenu ul {
+.mobileMenu ul,
+.mobileMenu2 ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +215,8 @@ header {
   width: 100%;
   height: 24rem;
 }
-.mobileMenu ul li {
+.mobileMenu ul li,
+.mobileMenu2 ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +233,8 @@ header {
   border-bottom: 0.4rem solid var(--yellow);
   text-align: center;
 }
-.mobileMenu ul a {
+.mobileMenu ul a,
+.mobileMenu2 ul a {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -246,6 +250,37 @@ header {
   width: 80%;
 
   height: 28.8rem;
+}
+.mobileMenu2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: var(--black);
+  width: 100vw;
+  height: 30.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 2rem 0 */
+  animation-name: close;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes close {
+  0% {
+    width: 100vw;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+  }
 }
 .hidden {
   display: none;
@@ -389,11 +424,6 @@ nav .bellNsearch {
   width: 100%;
   height: 100%;
 }
-
-.TopRightIcon {
-  /* display: none; */
-}
-
 .writeUp {
   display: flex;
   flex-direction: column;
@@ -1194,8 +1224,7 @@ footer .thirdFooter ul {
   align-items: center;
   gap: 2.4rem;
 }
-footer .thirdFooter a {
-}
+
 footer .thirdFooter li,
 .thirdFooter a {
   list-style: none;

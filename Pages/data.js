@@ -45,7 +45,11 @@ const postHeight = document.querySelector("postHeight");
 
 //open harmburger
 function openMenu() {
-  menu.classList.toggle("hidden");
+  menu.classList.remove("hidden");
+  menu.classList.add("mobileMenu");
+  menu.classList.remove("mobileMenu2");
+
+  // menu.classList.add("mobileMenu");
 }
 for (const item of hamburger) {
   item.addEventListener("click", openMenu);
@@ -53,7 +57,13 @@ for (const item of hamburger) {
 
 //Close harmburger
 function closeMenu() {
-  menu.classList.toggle("hidden");
+  menu.classList.add("mobileMenu2");
+  menu.classList.remove("mobileMenu");
+  // menu.classList.remove("mobileMenu");
+  // menu.classList.add("hidden");
+  // closeBtn.addEventListener("animationend", function () {
+  //   menu.classList.add("hidden");
+  // });
 }
 
 for (const item of hamburger) {
@@ -182,3 +192,11 @@ window.addEventListener("click", function (e) {
   postBtn.classList.add("hide");
   // }
 });
+
+localStorage.setItem("name", "Charles");
+
+const locale = localStorage.getItem("name");
+
+// localStorage.removeItem("Charles");
+console.log(locale);
+localStorage.clear("name");
